@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "E:\\vs\\projects\\gamedb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|e:\\vs\\projects\\gamedb\\gamedb\\gamedefaultseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|solutionrelative:gamedb\\gamedefaultseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|e:\\vs\\projects\\gamedb\\gamedb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|solutionrelative:gamedb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|e:\\vs\\projects\\gamedb\\gamedb\\gamemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|solutionrelative:gamedb\\gamemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|e:\\vs\\projects\\gamedb\\gamedb\\gamedefaultseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|solutionrelative:gamedb\\gamedefaultseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,37 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "GameDefaultSeed.cs",
               "DocumentMoniker": "E:\\vs\\projects\\gamedb\\gamedb\\GameDefaultSeed.cs",
               "RelativeDocumentMoniker": "gamedb\\GameDefaultSeed.cs",
               "ToolTip": "E:\\vs\\projects\\gamedb\\gamedb\\GameDefaultSeed.cs",
               "RelativeToolTip": "gamedb\\GameDefaultSeed.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAgwEkAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T13:40:38.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "DbContextGame.cs",
               "DocumentMoniker": "E:\\vs\\projects\\gamedb\\gamedb\\DbContextGame.cs",
               "RelativeDocumentMoniker": "gamedb\\DbContextGame.cs",
               "ToolTip": "E:\\vs\\projects\\gamedb\\gamedb\\DbContextGame.cs",
               "RelativeToolTip": "gamedb\\DbContextGame.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T13:25:41.536Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "GameModel.cs",
               "DocumentMoniker": "E:\\vs\\projects\\gamedb\\gamedb\\GameModel.cs",
               "RelativeDocumentMoniker": "gamedb\\GameModel.cs",
@@ -69,13 +69,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\vs\\projects\\gamedb\\gamedb\\Program.cs",
               "RelativeDocumentMoniker": "gamedb\\Program.cs",
               "ToolTip": "E:\\vs\\projects\\gamedb\\gamedb\\Program.cs",
               "RelativeToolTip": "gamedb\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T12:38:17.638Z",
               "EditorCaption": ""

@@ -52,3 +52,4 @@ E:\vs\projects\gamedb\gamedb\obj\Debug\net8.0\refint\gamedb.dll
 E:\vs\projects\gamedb\gamedb\obj\Debug\net8.0\gamedb.pdb
 E:\vs\projects\gamedb\gamedb\obj\Debug\net8.0\gamedb.genruntimeconfig.cache
 E:\vs\projects\gamedb\gamedb\obj\Debug\net8.0\ref\gamedb.dll
+E:\vs\projects\gamedb\gamedb\obj\Debug\net8.0\gamedb.sourcelink.json
