@@ -26,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameDefaultSeed.cs",
-              "DocumentMoniker": "E:\\vs\\projects\\gamedb\\gamedb\\GameDefaultSeed.cs",
-              "RelativeDocumentMoniker": "gamedb\\GameDefaultSeed.cs",
-              "ToolTip": "E:\\vs\\projects\\gamedb\\gamedb\\GameDefaultSeed.cs",
-              "RelativeToolTip": "gamedb\\GameDefaultSeed.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAgwEkAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T13:40:38.221Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -51,8 +38,32 @@
               "RelativeToolTip": "gamedb\\DbContextGame.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T13:25:41.536Z",
+              "WhenOpened": "2024-06-04T13:25:41.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\vs\\projects\\gamedb\\gamedb\\Program.cs",
+              "RelativeDocumentMoniker": "gamedb\\Program.cs",
+              "ToolTip": "E:\\vs\\projects\\gamedb\\gamedb\\Program.cs",
+              "RelativeToolTip": "gamedb\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T12:38:17.638Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameDefaultSeed.cs",
+              "DocumentMoniker": "E:\\vs\\projects\\gamedb\\gamedb\\GameDefaultSeed.cs",
+              "RelativeDocumentMoniker": "gamedb\\GameDefaultSeed.cs",
+              "ToolTip": "E:\\vs\\projects\\gamedb\\gamedb\\GameDefaultSeed.cs",
+              "RelativeToolTip": "gamedb\\GameDefaultSeed.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAgwEkAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T13:40:38.221Z"
             },
             {
               "$type": "Document",
@@ -64,21 +75,7 @@
               "RelativeToolTip": "gamedb\\GameModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T12:48:08.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\vs\\projects\\gamedb\\gamedb\\Program.cs",
-              "RelativeDocumentMoniker": "gamedb\\Program.cs",
-              "ToolTip": "E:\\vs\\projects\\gamedb\\gamedb\\Program.cs",
-              "RelativeToolTip": "gamedb\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T12:38:17.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T12:48:08.567Z"
             }
           ]
         }
