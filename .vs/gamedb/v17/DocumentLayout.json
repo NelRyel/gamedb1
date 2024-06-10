@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|solutionrelative:gamedb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|e:\\vs\\projects\\gamedb\\gamedb\\dbcontextgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|solutionrelative:gamedb\\dbcontextgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|e:\\vs\\projects\\gamedb\\gamedb\\gamedefaultseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|solutionrelative:gamedb\\gamedefaultseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|e:\\vs\\projects\\gamedb\\gamedb\\gamemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|solutionrelative:gamedb\\gamemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|e:\\vs\\projects\\gamedb\\gamedb\\gamedefaultseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|solutionrelative:gamedb\\gamedefaultseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|e:\\vs\\projects\\gamedb\\gamedb\\dbcontextgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48C9424E-C550-4B62-BC58-695930670CE9}|gamedb\\gamedb.csproj|solutionrelative:gamedb\\dbcontextgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DbContextGame.cs",
               "DocumentMoniker": "E:\\vs\\projects\\gamedb\\gamedb\\DbContextGame.cs",
               "RelativeDocumentMoniker": "gamedb\\DbContextGame.cs",
@@ -48,22 +48,23 @@
               "RelativeDocumentMoniker": "gamedb\\Program.cs",
               "ToolTip": "E:\\vs\\projects\\gamedb\\gamedb\\Program.cs",
               "RelativeToolTip": "gamedb\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAA5AAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwCMAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T12:38:17.638Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "GameDefaultSeed.cs",
               "DocumentMoniker": "E:\\vs\\projects\\gamedb\\gamedb\\GameDefaultSeed.cs",
               "RelativeDocumentMoniker": "gamedb\\GameDefaultSeed.cs",
               "ToolTip": "E:\\vs\\projects\\gamedb\\gamedb\\GameDefaultSeed.cs",
               "RelativeToolTip": "gamedb\\GameDefaultSeed.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAgwEkAAAA4AAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAFQAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T13:40:38.221Z"
+              "WhenOpened": "2024-06-04T13:40:38.221Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -73,9 +74,10 @@
               "RelativeDocumentMoniker": "gamedb\\GameModel.cs",
               "ToolTip": "E:\\vs\\projects\\gamedb\\gamedb\\GameModel.cs",
               "RelativeToolTip": "gamedb\\GameModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T12:48:08.567Z"
+              "WhenOpened": "2024-06-04T12:48:08.567Z",
+              "EditorCaption": ""
             }
           ]
         }

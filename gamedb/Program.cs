@@ -12,27 +12,43 @@ seed.OnStartAppDb();
 Console.WriteLine(  "End_____________________________");
 
 
-using (DbContextGame db = new DbContextGame())
+
+
+void PrintOneGame(int id)
 {
-    //Game? game = db.Games.FirstOrDefault();
-    Game game = db.Games.Include(d => d.Genres).Include(g => g.Publisher).Include(g=>g.Developer).Include(g=>g.Platforms).Include(g=>g.GameDescription).FirstOrDefault();
-    //if(game == null)
-    //{
-    //    Console.WriteLine("NULL");
-    //    return;
-    //}
-    var msg = game.Platforms.ToList();
-
-    Console.WriteLine($"Name: {game.GameName}");
-
-    foreach (var item in msg)
+    using (DbContextGame db = new DbContextGame())
     {
-        Console.WriteLine( item.PlatformName.ToString());
+      
+
+        Game game = db.Games.Include(d => d.Genres).Include(g => g.Publisher).Include(g => g.Developer).Include(g => g.Platforms).Include(g => g.GameDescription).FirstOrDefault(g=>g.Id == id);
+
+        var platforms = game.Platforms.ToList();
+        var genres = game.Genres.ToList();
+
+        Console.WriteLine($"Name: {game.GameName}");
+        Console.WriteLine($"Year: {game.GameDescription.ReleaseYear}");
+        Console.WriteLine($"Publisher: {game.Publisher.PubName}");
+        Console.WriteLine($"DeveloperL {game.Developer.DevName}");
+        Console.Write($"Platforms: ");
+        platforms.ForEach(x => Console.Write($" {x.PlatformName}"));
+        Console.WriteLine("");
+        Console.Write($"Genres: ");
+        genres.ForEach(x => Console.Write($" {x.GenreName}"));
+        Console.WriteLine("");
+        Console.WriteLine($"Description: {game.GameDescription.Description}");
+
+
+        //foreach (var item in platforms)
+        //{
+        //    Console.WriteLine( item.PlatformName.ToString());
+        //}
+
+        //Console.WriteLine(msg);
+
     }
-
-    //Console.WriteLine(msg);
-
 }
+
+PrintOneGame(2);
 
 //using(DbContextGame db = new DbContextGame())
 //{
