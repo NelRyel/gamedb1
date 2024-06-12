@@ -1,13 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using gamedb;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 using static gamedb.GameModel;
 
 Console.WriteLine("Hello, World!");
 
 GameDefaultSeed seed = new GameDefaultSeed();
 
-seed.OnStartAppDb();
+//seed.OnStartAppDb();
 
 CrudControls.PrintAllGame();
 
@@ -18,24 +19,42 @@ CrudControls.PrintAllGame();
 
 Console.WriteLine(  "End_____________________________");
 
-using (DbContextGame db = new DbContextGame())
-{
-    Console.WriteLine( "Genres: ");
-    List<Genre> genres = db.Genres.ToList();
-    genres.ForEach(x => Console.WriteLine($"{x.Id} - {x.GenreName}"));
-    bool w = true;
-    while (w == true)
-    {
-        Console.WriteLine("enter genre id: ");
-        int GenId = Convert.ToInt32(Console.ReadLine());
-        Genre genre = db.Genres.Find(GenId);
-        Console.WriteLine( genre.GenreName);
-        // game.Genres.Add(genre);
-        Console.WriteLine("more? Y/N");
-        string isDone = Console.ReadLine();
-        w = (isDone == "Y") ? true : false;
-    }
+//Console.WriteLine( "GENRES ");
 
+//CrudControls.GenrePrintAll();
+//Console.WriteLine();
 
+//Console.WriteLine( "Platform:  " );
 
-}
+//CrudControls.PlatformsPrintAll();
+//Console.WriteLine("END ");
+
+//Console.WriteLine(" Developers: ");
+
+//CrudControls.DevPrintAll();
+
+//Console.WriteLine("END ");
+//Console.WriteLine("Publishers ");
+//CrudControls.PublisherPrintAll();
+
+//Console.WriteLine("END ");
+
+//Console.WriteLine("ADD GENRE _____________");
+//CrudControls.GenreAdd();
+//Console.WriteLine("start add pub_________________");
+//CrudControls.PubAdd();
+//Console.WriteLine("end add pub_________________");
+
+////CrudControls.DevAdd();
+
+//Console.WriteLine(  "Begin ADD GAME__________________");
+//CrudControls.AddGame();
+
+//Console.WriteLine("DONE ADD________________________________________");
+
+//CrudControls.PrintAllGame();
+Console.WriteLine( "Enter ID ");
+int idd = Convert.ToInt32(Console.ReadLine());
+CrudControls.PrintOneGame(idd);
+
+Console.WriteLine("done");

@@ -58,6 +58,168 @@ namespace gamedb
             }
         }
 
+        public static void GenrePrintAll()
+        {
+            using (DbContextGame db = new DbContextGame())
+            {
+                    List<Genre> i = db.Genres.ToList();
+                i.ForEach(x => Console.WriteLine("genre ID: " + x.Id + " - " + "Genre Name: " + x.GenreName));
+               
+            }
+        }
+
+        public static void PlatformsPrintAll()
+        {
+            using (DbContextGame db = new DbContextGame())
+            {
+                List<Platform> i = db.Platforms.ToList();
+                i.ForEach(x => Console.WriteLine("Platform ID: " + x.Id + " - " + "Platform Name: " + x.PlatformName));
+
+            }
+        }
+        public static void DevPrintAll()
+        {
+            using (DbContextGame db = new DbContextGame())
+            {
+                List<Developer> i = db.Developers.ToList();
+                i.ForEach(x => Console.WriteLine("Developer ID: " + x.Id + " - " + "Developer Name: " + x.DevName));
+
+            }
+        }
+        public static void PublisherPrintAll()
+        {
+            using (DbContextGame db = new DbContextGame())
+            {
+                List<Publisher> i = db.Publishers.ToList();
+                i.ForEach(x => Console.WriteLine("Publisher ID: " + x.Id + " - " + "Publisher Name: " + x.PubName));
+
+            }
+        }
+
+        public static void PubDel()
+        {
+            using(DbContextGame db = new DbContextGame())
+            {
+                Console.WriteLine( "before del: ");
+                PublisherPrintAll();
+                int PubID = Convert.ToInt32(Console.ReadLine());
+                Publisher pub = db.Publishers.Find(PubID);
+                db.Publishers.Remove(pub);
+                db.SaveChanges();
+                Console.WriteLine("after del: ");
+                PublisherPrintAll();
+            }
+        }
+
+        public static void GenreAdd()
+        {
+            using (DbContextGame db = new DbContextGame())
+            {
+                bool w = true;
+                while (w)
+                {
+                    GenrePrintAll();
+
+                    Console.WriteLine("Enter new genre: ");
+                    string name = "";
+                    name = Console.ReadLine();
+                    Genre genre = new Genre();
+                    genre.GenreName = name;
+                    Console.WriteLine("more? Y/N");
+                    string isDone = Console.ReadLine();
+                    w = (isDone == "Y") ? true : false;
+                    db.Genres.Add(genre);
+                    db.SaveChanges();
+                }
+
+                GenrePrintAll();
+
+
+            }
+        }
+
+        public static void DevAdd()
+        {
+            using (DbContextGame db = new DbContextGame())
+            {
+                bool w = true;
+                while (w)
+                {
+                    DevPrintAll();
+
+                    Console.WriteLine("Enter new developer: ");
+                    string name = "";
+                    name = Console.ReadLine();
+                    Developer d = new Developer();
+                    d.DevName = name;
+                    Console.WriteLine("more? Y/N");
+                    string isDone = Console.ReadLine();
+                    w = (isDone == "Y") ? true : false;
+                    db.Developers.Add(d);
+                    db.SaveChanges();
+                }
+
+                DevPrintAll();
+
+
+            }
+        }
+
+        public static void PubAdd()
+        {
+            using (DbContextGame db = new DbContextGame())
+            {
+                bool w = true;
+                while (w)
+                {
+                    PublisherPrintAll();
+
+                    Console.WriteLine("Enter new publisher: ");
+                    string name = "";
+                    name = Console.ReadLine();
+                    Publisher d = new Publisher();
+                    d.PubName = name;
+                    Console.WriteLine("more? Y/N");
+                    string isDone = Console.ReadLine();
+                    w = (isDone == "Y") ? true : false;
+                    db.Publishers.Add(d);
+                    db.SaveChanges();
+                }
+                PublisherPrintAll();
+
+
+
+
+            }
+        }
+
+        public static void PlatformAdd()
+        {
+            using (DbContextGame db = new DbContextGame())
+            {
+                bool w = true;
+                while (w)
+                {
+                    PlatformsPrintAll();
+
+                    Console.WriteLine("Enter new Platform: ");
+                    string name = "";
+                    name = Console.ReadLine();
+                    Platform d = new Platform();
+                    d.PlatformName = name;
+                    Console.WriteLine("more? Y/N");
+                    string isDone = Console.ReadLine();
+                    w = (isDone == "Y") ? true : false;
+                    db.Platforms.Add(d);
+                    db.SaveChanges();
+                }
+
+                GenrePrintAll();
+
+
+            }
+        }
+
         public static void AddGame()
         {
             using (DbContextGame db = new DbContextGame())
@@ -66,6 +228,7 @@ namespace gamedb
                 string GameName;
                 Console.WriteLine("Enter Game Name: ");
                 GameName = Console.ReadLine();
+                game.GameName = GameName;
                 List<Genre> genres = db.Genres.ToList();
                 List<Platform> platforms = db.Platforms.ToList();
                 bool w = true;
@@ -80,6 +243,7 @@ namespace gamedb
                     string isDone = Console.ReadLine();
                     w = (isDone=="Y")?true:false;
                 }
+
                 w = true;
                 while (w == true)
                 {
@@ -93,8 +257,35 @@ namespace gamedb
                     w = (isDone == "Y") ? true : false;
                 }
 
+                
+                    CrudControls.DevPrintAll();
+                    Console.WriteLine( "Enter dev ID: ");
+                    int DevId = Convert.ToInt32( Console.ReadLine());
+                    Developer dev = db.Developers.Find(DevId);
+                    dev.Games.Add(game);
+
+                CrudControls.PublisherPrintAll();
+                Console.WriteLine("enter Pub ID: ");
+                int PubId = Convert.ToInt32( Console.ReadLine());
+                Publisher pub = db.Publishers.Find(PubId);
+                pub.Games.Add(game);
+
+                GameDescription gameDescription = new GameDescription();
+                Console.WriteLine("Enter Releasy year: ");
+                int rel = Convert.ToInt32( Console.ReadLine());
+                gameDescription.ReleaseYear = rel;
+                Console.WriteLine("Enter Description");
+                string desc = Console.ReadLine();
+                gameDescription.Description = desc;
+                gameDescription.Game = game;
+
+                db.GameDescriptions.Add(gameDescription);
+
+                db.SaveChanges();
+
+
             }
 
-        }
+        } //ne zakonchen 
     }
 }
