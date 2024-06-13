@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\nelShit\\gamedb1\\gamedb\\gamedb.csproj": {}
+    "E:\\vs\\projects\\gamedb\\gamedb\\gamedb.csproj": {}
   },
   "projects": {
-    "E:\\nelShit\\gamedb1\\gamedb\\gamedb.csproj": {
+    "E:\\vs\\projects\\gamedb\\ClassLibraryGameDb\\ClassLibraryGameDb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\nelShit\\gamedb1\\gamedb\\gamedb.csproj",
-        "projectName": "gamedb",
-        "projectPath": "E:\\nelShit\\gamedb1\\gamedb\\gamedb.csproj",
-        "packagesPath": "C:\\Users\\BigVitek\\.nuget\\packages\\",
-        "outputPath": "E:\\nelShit\\gamedb1\\gamedb\\obj\\",
+        "projectUniqueName": "E:\\vs\\projects\\gamedb\\ClassLibraryGameDb\\ClassLibraryGameDb.csproj",
+        "projectName": "ClassLibraryGameDb",
+        "projectPath": "E:\\vs\\projects\\gamedb\\ClassLibraryGameDb\\ClassLibraryGameDb.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "E:\\vs\\projects\\gamedb\\ClassLibraryGameDb\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\vs\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\BigVitek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +33,78 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\vs\\projects\\gamedb\\gamedb\\gamedb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\vs\\projects\\gamedb\\gamedb\\gamedb.csproj",
+        "projectName": "gamedb",
+        "projectPath": "E:\\vs\\projects\\gamedb\\gamedb\\gamedb.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "E:\\vs\\projects\\gamedb\\gamedb\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\vs\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\vs\\projects\\gamedb\\ClassLibraryGameDb\\ClassLibraryGameDb.csproj": {
+                "projectPath": "E:\\vs\\projects\\gamedb\\ClassLibraryGameDb\\ClassLibraryGameDb.csproj"
+              },
+              "E:\\vs\\projects\\gamedb\\WpfLibrary1\\WpfLibrary1.csproj": {
+                "projectPath": "E:\\vs\\projects\\gamedb\\WpfLibrary1\\WpfLibrary1.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -67,7 +143,75 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\vs\\projects\\gamedb\\WpfLibrary1\\WpfLibrary1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\vs\\projects\\gamedb\\WpfLibrary1\\WpfLibrary1.csproj",
+        "projectName": "WpfLibrary1",
+        "projectPath": "E:\\vs\\projects\\gamedb\\WpfLibrary1\\WpfLibrary1.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "E:\\vs\\projects\\gamedb\\WpfLibrary1\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\vs\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
