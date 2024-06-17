@@ -1,9 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using ClassLibraryGameDb;
+
 using gamedb;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
-using WpfLibrary1;
+
 using static gamedb.GameModel;
 
 Console.WriteLine("Hello, World!");
@@ -19,12 +19,6 @@ CrudControls.PrintAllGame();
 
 //CrudControls.PrintOneGame(Convert.ToInt32(id));
 
-string ss;
-ss = Class1.Boink();
-Console.WriteLine(  ss);
-
-string wtf;
-wtf = Class1Wpf.Boink();
 
 Console.WriteLine(  "End_____________________________");
 

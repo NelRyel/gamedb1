@@ -11,9 +11,4 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.6" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ClassLibraryGameDb\ClassLibraryGameDb.csproj" />
-    <ProjectReference Include="..\WpfLibrary1\WpfLibrary1.csproj" />
-  </ItemGroup>
-
 </Project>

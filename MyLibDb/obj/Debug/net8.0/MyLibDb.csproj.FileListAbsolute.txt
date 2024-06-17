@@ -1,0 +1,13 @@
+E:\nelShit\gamedb1\MyLibDb\bin\Debug\net8.0\MyLibDb.deps.json
+E:\nelShit\gamedb1\MyLibDb\bin\Debug\net8.0\MyLibDb.dll
+E:\nelShit\gamedb1\MyLibDb\bin\Debug\net8.0\MyLibDb.pdb
+E:\nelShit\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.csproj.AssemblyReference.cache
+E:\nelShit\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.GeneratedMSBuildEditorConfig.editorconfig
+E:\nelShit\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.AssemblyInfoInputs.cache
+E:\nelShit\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.AssemblyInfo.cs
+E:\nelShit\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.csproj.CoreCompileInputs.cache
+E:\nelShit\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.sourcelink.json
+E:\nelShit\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.dll
+E:\nelShit\gamedb1\MyLibDb\obj\Debug\net8.0\refint\MyLibDb.dll
+E:\nelShit\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.pdb
+E:\nelShit\gamedb1\MyLibDb\obj\Debug\net8.0\ref\MyLibDb.dll

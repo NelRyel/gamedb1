@@ -482,26 +482,6 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
-      },
-      "ClassLibraryGameDb/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/ClassLibraryGameDb.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ClassLibraryGameDb.dll": {}
-        }
-      },
-      "WpfLibrary1/1.0.0": {
-        "type": "project",
-        "framework": "Unsupported,Version=v0.0",
-        "compile": {
-          "bin/placeholder/WpfLibrary1.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/WpfLibrary1.dll": {}
-        }
       }
     }
   },
@@ -1198,44 +1178,27 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "ClassLibraryGameDb/1.0.0": {
-      "type": "project",
-      "path": "../ClassLibraryGameDb/ClassLibraryGameDb.csproj",
-      "msbuildProject": "../ClassLibraryGameDb/ClassLibraryGameDb.csproj"
-    },
-    "WpfLibrary1/1.0.0": {
-      "type": "project",
-      "path": "../WpfLibrary1/WpfLibrary1.csproj",
-      "msbuildProject": "../WpfLibrary1/WpfLibrary1.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "ClassLibraryGameDb >= 1.0.0",
-      "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.6",
-      "WpfLibrary1 >= 1.0.0"
+      "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.6"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "E:\\vs\\Shared\\NuGetPackages": {}
+    "C:\\Users\\BigVitek\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\vs\\projects\\gamedb\\gamedb\\gamedb.csproj",
+      "projectUniqueName": "E:\\nelShit\\gamedb1\\gamedb\\gamedb.csproj",
       "projectName": "gamedb",
-      "projectPath": "E:\\vs\\projects\\gamedb\\gamedb\\gamedb.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\vs\\projects\\gamedb\\gamedb\\obj\\",
+      "projectPath": "E:\\nelShit\\gamedb1\\gamedb\\gamedb.csproj",
+      "packagesPath": "C:\\Users\\BigVitek\\.nuget\\packages\\",
+      "outputPath": "E:\\nelShit\\gamedb1\\gamedb\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "E:\\vs\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\BigVitek\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1249,14 +1212,7 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "E:\\vs\\projects\\gamedb\\ClassLibraryGameDb\\ClassLibraryGameDb.csproj": {
-              "projectPath": "E:\\vs\\projects\\gamedb\\ClassLibraryGameDb\\ClassLibraryGameDb.csproj"
-            },
-            "E:\\vs\\projects\\gamedb\\WpfLibrary1\\WpfLibrary1.csproj": {
-              "projectPath": "E:\\vs\\projects\\gamedb\\WpfLibrary1\\WpfLibrary1.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -1295,19 +1251,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Проект WpfLibrary1 несовместим с net8.0 (.NETCoreApp,Version=v8.0). Проект WpfLibrary1 поддерживает: net8.0-windows7.0 (.NETCoreApp,Version=v8.0)",
-      "libraryId": "WpfLibrary1",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }

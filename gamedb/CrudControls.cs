@@ -12,6 +12,11 @@ namespace gamedb
 {
     public static class CrudControls
     {
+        public static string Boink()
+        {
+            string ss = "BOINK DB";
+            return ss;
+        }
         public static void PrintOneGame(int id)
         {
             using (DbContextGame db = new DbContextGame())
