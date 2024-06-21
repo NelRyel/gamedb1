@@ -20,7 +20,7 @@ namespace MyLibDb
 
         public _TestContext()
         {
-            Database.EnsureDeleted();
+            //Database.EnsureDeleted();
             Database.EnsureCreated();
         }
 

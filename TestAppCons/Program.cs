@@ -8,7 +8,7 @@ using (_TestContext db = new _TestContext())
 {
     Console.WriteLine( "in using");
 
-    __DefaultInit.OnStart();
+    //__DefaultInit.OnStart();
 
 
     // Game game = db.Games.Include(g=>g.GameDescription).Include(a=>a.).FirstOrDefault();
