@@ -7,15 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-       
 
-        <DataGrid AutoGenerateColumns="False" x:Name="mainGameData" Margin="5 50 5 5"  >
-            <DataGrid.Columns>
+        <!--<DataGrid Name="mainGameData" />-->
+        <DataGrid AutoGenerateColumns="True" x:Name="mainGameData" Margin="5 50 5 5"  >
+            <!--<DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />
-                <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />
+                <DataGridTextColumn Binding="{Binding GameDescription.Game.Name}" Header="Title" Width="100"  />
+                <DataGridTextColumn Binding="{Binding Description}" Header="Desc" Width="100"  />
                
 
-            </DataGrid.Columns>
+            </DataGrid.Columns>-->
             
         </DataGrid>
 

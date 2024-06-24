@@ -17,12 +17,23 @@ namespace WpfAppTestDb {
     /// </summary>
     public partial class MainWindow : Window {
         public MainWindow() {
+
             InitializeComponent();
 
             using (_TestContext db = new _TestContext()) {
 
-                db.Games.Load();
-                mainGameData.ItemsSource = db.Games.Local.ToBindingList();
+                //Game game = db.Games.Include(d => d.Genres).Include(g => g.Publisher).Include(g => g.Developer).Include(g => g.Platforms).Include(g => g.GameDescription).FirstOrDefault(g => g.Id == id);
+                
+                var data = db.GameDescriptions.Include(g => g.Game).Include(p => p.Publisher).Include(d => d.Developer).ToList();
+
+                mainGameData.ItemsSource = data.FirstOrDefault().Game.Name;
+                var dt = data.FirstOrDefault();
+                // var data = db.Games.ToList();
+                
+              
+
+
+               // mainGameData.ItemsSource = data;
 
 
             }
