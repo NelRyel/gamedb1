@@ -12,8 +12,9 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\BigVitek\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\BigVitek\\.nuget\\packages"
+      "C:\\Users\\NelRyel\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\NelRyel\\.nuget\\packages",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,

@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\nelShit\\gamedb1\\MyLibDb\\MyLibDb.csproj": {}
+    "D:\\NelLearn\\gamedb1\\MyLibDb\\MyLibDb.csproj": {}
   },
   "projects": {
-    "E:\\nelShit\\gamedb1\\MyLibDb\\MyLibDb.csproj": {
+    "D:\\NelLearn\\gamedb1\\MyLibDb\\MyLibDb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\nelShit\\gamedb1\\MyLibDb\\MyLibDb.csproj",
+        "projectUniqueName": "D:\\NelLearn\\gamedb1\\MyLibDb\\MyLibDb.csproj",
         "projectName": "MyLibDb",
-        "projectPath": "E:\\nelShit\\gamedb1\\MyLibDb\\MyLibDb.csproj",
-        "packagesPath": "C:\\Users\\BigVitek\\.nuget\\packages\\",
-        "outputPath": "E:\\nelShit\\gamedb1\\MyLibDb\\obj\\",
+        "projectPath": "D:\\NelLearn\\gamedb1\\MyLibDb\\MyLibDb.csproj",
+        "packagesPath": "C:\\Users\\NelRyel\\.nuget\\packages\\",
+        "outputPath": "D:\\NelLearn\\gamedb1\\MyLibDb\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\BigVitek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NelRyel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
