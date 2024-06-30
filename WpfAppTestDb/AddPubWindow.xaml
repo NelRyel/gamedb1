@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfAppTestDb.AddPubWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppTestDb"
+        mc:Ignorable="d"
+        Title="AddPubWindow" Height="450" Width="450">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid Grid.Column="0" Margin="5 5 5 5" x:Name="pubDataGrid">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />
+                <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />
+              
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Grid.Column="1" Margin="5"/>
+
+    </Grid>
+</Window>

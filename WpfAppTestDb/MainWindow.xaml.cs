@@ -18,29 +18,65 @@ namespace WpfAppTestDb {
     public partial class MainWindow : Window {
         public MainWindow() {
 
+            Title = "凸(⊙▂⊙✖ )";
+
+
             InitializeComponent();
+
+            UpdaterDataGrid();
 
             using (_TestContext db = new _TestContext()) {
 
                 //Game game = db.Games.Include(d => d.Genres).Include(g => g.Publisher).Include(g => g.Developer).Include(g => g.Platforms).Include(g => g.GameDescription).FirstOrDefault(g => g.Id == id);
-                
-                var data = db.GameDescriptions.Include(g => g.Game).Include(p => p.Publisher).Include(d => d.Developer).ToList();
 
-                mainGameData.ItemsSource = data.FirstOrDefault().Game.Name;
-                var dt = data.FirstOrDefault();
+               // var data = db.GameDescriptions.Include(g => g.Game).Include(p => p.Publisher).Include(d => d.Developer).ToList();
                 // var data = db.Games.ToList();
-                
-              
+                // mainGameData.ItemsSource = data;
+                //var dt = data.FirstOrDefault();
+                // var data = db.Games.ToList();
 
 
-               // mainGameData.ItemsSource = data;
+                //var lin = from l in db.GameDescriptions join gg in db.Games on l.GameId equals gg.Id select new { Id = gg.Id, Name = gg.Name, Desc = l.Description };
+                //mainGameData.ItemsSource = lin.ToList();
+
+
+
+                //var datasTest = new[] 
+                //{ 
+                //     new {name = "Tt"}
+                //}; анонимный массив
+
+
+
+
+                //var dataD = db.GameDescriptions.Include(g => g.Game).Include(p => p.Publisher).Include(d => d.Developer).ToList();
+                //var gridData = new {Id = dataD.Id, Title = dataD.Game.Name, Desc = dataD.Description, Dev = dataD.Developer.Name, Publ = dataD.Publisher.Name };
+
+                //MessageBox.Show(gridData.ToString());
+
+                //mainGameData.ItemsSource = data;
 
 
             }
 
         }
 
+        public void UpdaterDataGrid() {
+           
+            using (_TestContext db = new _TestContext()) {
 
+                var lin = from l in db.GameDescriptions join gg in db.Games on l.GameId equals gg.Id select new { Id = gg.Id, Name = gg.Name, Desc = l.Description };
+                mainGameData.ItemsSource = lin.ToList();
+                //return lin.ToList();
 
+            }
+        }
+
+        private void Button_ClickAddPub(object sender, RoutedEventArgs e) {
+            AddPubWindow addPubWindow = new AddPubWindow();
+            addPubWindow.Owner =   this;
+            addPubWindow.Show();
+
+        }
     }
 }

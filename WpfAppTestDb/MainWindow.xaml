@@ -5,20 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppTestDb"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="凸(⊙▂⊙✖ )" Height="450" Width="800">
     <Grid>
+        
+
 
         <!--<DataGrid Name="mainGameData" />-->
-        <DataGrid AutoGenerateColumns="True" x:Name="mainGameData" Margin="5 50 5 5"  >
-            <!--<DataGrid.Columns>
+        <DataGrid AutoGenerateColumns="False" x:Name="mainGameData" Margin="5 100 5 5"  >
+            <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />
-                <DataGridTextColumn Binding="{Binding GameDescription.Game.Name}" Header="Title" Width="100"  />
-                <DataGridTextColumn Binding="{Binding Description}" Header="Desc" Width="100"  />
+                <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />
+                <DataGridTextColumn Binding="{Binding Desc}" Header="Desc" Width="100"  />
+                <!--<DataGridTextColumn Binding="{Binding Description}" Header="Desc" Width="100"  />-->
                
 
-            </DataGrid.Columns>-->
+            </DataGrid.Columns>
             
         </DataGrid>
+        <!--<Button Content="Add" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="50"/>-->
+        <StackPanel Orientation="Horizontal" Height="50" Margin="5,10,5,355">
+            <Button MinWidth="30" Width="80" Content="add game" Margin="5" />
+            <Button MinWidth="30" Width="80" Content="add genre" Margin="5"  />
+            <Button MinWidth="30" Width="80" Content="add Publisher" Margin="5" Click="Button_ClickAddPub"/>
+            <Button MinWidth="30" Width="80" Content="add Developer" Margin="5" />
+            <Button MinWidth="30" Width="80" Content="add platform" Margin="5" />
+        </StackPanel>
+
+
+
 
     </Grid>
 </Window>

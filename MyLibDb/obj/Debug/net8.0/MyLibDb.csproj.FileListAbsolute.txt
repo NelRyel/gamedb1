@@ -11,3 +11,16 @@ E:\nelShit\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.dll
 E:\nelShit\gamedb1\MyLibDb\obj\Debug\net8.0\refint\MyLibDb.dll
 E:\nelShit\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.pdb
 E:\nelShit\gamedb1\MyLibDb\obj\Debug\net8.0\ref\MyLibDb.dll
+D:\NelLearn\gamedb1\MyLibDb\bin\Debug\net8.0\MyLibDb.deps.json
+D:\NelLearn\gamedb1\MyLibDb\bin\Debug\net8.0\MyLibDb.dll
+D:\NelLearn\gamedb1\MyLibDb\bin\Debug\net8.0\MyLibDb.pdb
+D:\NelLearn\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.csproj.AssemblyReference.cache
+D:\NelLearn\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.GeneratedMSBuildEditorConfig.editorconfig
+D:\NelLearn\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.AssemblyInfoInputs.cache
+D:\NelLearn\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.AssemblyInfo.cs
+D:\NelLearn\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.csproj.CoreCompileInputs.cache
+D:\NelLearn\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.sourcelink.json
+D:\NelLearn\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.dll
+D:\NelLearn\gamedb1\MyLibDb\obj\Debug\net8.0\refint\MyLibDb.dll
+D:\NelLearn\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.pdb
+D:\NelLearn\gamedb1\MyLibDb\obj\Debug\net8.0\ref\MyLibDb.dll
