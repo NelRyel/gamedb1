@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\NelLearn\gamedb1\WpfAppTestDb\App.xaml
-2248896960
+31088771141
 
-8-57247058
+10-52367268
 24562631628
-AddPubWindow.xaml;MainWindow.xaml;
+AddPubWindow.xaml;MainWindow.xaml;PublisherEditWindow.xaml;
 
 True
 

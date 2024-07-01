@@ -11,7 +11,7 @@
 
 
         <!--<DataGrid Name="mainGameData" />-->
-        <DataGrid AutoGenerateColumns="False" x:Name="mainGameData" Margin="5 100 5 5"  >
+        <DataGrid AutoGenerateColumns="False" x:Name="mainGameData" Margin="5 100 5 5" IsReadOnly="True"  >
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />
                 <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />

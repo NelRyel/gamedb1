@@ -78,10 +78,12 @@ D:\NelLearn\gamedb1\WpfAppTestDb\bin\Debug\net8.0-windows\runtimes\win\lib\net6.
 D:\NelLearn\gamedb1\WpfAppTestDb\bin\Debug\net8.0-windows\MyLibDb.dll
 D:\NelLearn\gamedb1\WpfAppTestDb\bin\Debug\net8.0-windows\MyLibDb.pdb
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\WpfAppTestDb.csproj.AssemblyReference.cache
+D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\AddPubWindow.g.cs
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\MainWindow.g.cs
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\App.g.cs
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\WpfAppTestDb_MarkupCompile.cache
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\WpfAppTestDb_MarkupCompile.lref
+D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\AddPubWindow.baml
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\MainWindow.baml
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\WpfAppTestDb.g.resources
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\WpfAppTestDb.GeneratedMSBuildEditorConfig.editorconfig
@@ -95,5 +97,5 @@ D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\refint\WpfAppTestDb.dl
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\WpfAppTestDb.pdb
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\WpfAppTestDb.genruntimeconfig.cache
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\ref\WpfAppTestDb.dll
-D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\AddPubWindow.g.cs
-D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\AddPubWindow.baml
+D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\PublisherEditWindow.g.cs
+D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\PublisherEditWindow.baml

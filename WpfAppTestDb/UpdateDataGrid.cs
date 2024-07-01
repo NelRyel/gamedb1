@@ -22,11 +22,11 @@ namespace WpfAppTestDb {
 
        
         public void uuUpdaterDataGrid() {
-            MainWindow m = new MainWindow();
+            //MainWindow m = new MainWindow();
             using (_TestContext db = new _TestContext()) {
 
                 var lin = from l in db.GameDescriptions join gg in db.Games on l.GameId equals gg.Id select new { Id = gg.Id, Name = gg.Name, Desc = l.Description };
-                m.mainGameData.ItemsSource = lin.ToList();
+                //mainGameData.ItemsSource = lin.ToList();
                 //return lin.ToList();
 
             }

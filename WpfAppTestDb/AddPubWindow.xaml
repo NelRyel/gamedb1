@@ -11,14 +11,17 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <DataGrid Grid.Column="0" Margin="5 5 5 5" x:Name="pubDataGrid">
+        <DataGrid AutoGenerateColumns="False" Grid.Column="0" Margin="5 5 5 5" x:Name="pubDataGrid" IsReadOnly="True" MouseDoubleClick="pubDataGrid_MouseDoubleClick">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />
                 <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />
-              
             </DataGrid.Columns>
         </DataGrid>
-        <Button Grid.Column="1" Margin="5"/>
+        <StackPanel Grid.Column="1" Margin="5" Orientation="Vertical">
+            <Label Margin="5">Название издателя </Label>
+            <TextBox Margin="5" x:Name="tbPub" Height="40"></TextBox>
+            <Button Margin="5" x:Name="btnPubAdd" Height="25" Click="btnPubAdd_Click"> + Add + </Button>
+        </StackPanel>
 
     </Grid>
 </Window>

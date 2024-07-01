@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Windows.Forms.LinkLabel;
 
 namespace WpfAppTestDb {
     /// <summary>
@@ -18,7 +19,7 @@ namespace WpfAppTestDb {
     public partial class MainWindow : Window {
         public MainWindow() {
 
-            Title = "凸(⊙▂⊙✖ )";
+            
 
 
             InitializeComponent();
@@ -62,7 +63,7 @@ namespace WpfAppTestDb {
         }
 
         public void UpdaterDataGrid() {
-           
+            mainGameData.ItemsSource = null;
             using (_TestContext db = new _TestContext()) {
 
                 var lin = from l in db.GameDescriptions join gg in db.Games on l.GameId equals gg.Id select new { Id = gg.Id, Name = gg.Name, Desc = l.Description };
