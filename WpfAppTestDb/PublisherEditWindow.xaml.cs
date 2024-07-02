@@ -30,13 +30,16 @@ namespace WpfAppTestDb {
 
         private void Button_Click_Ok(object sender, RoutedEventArgs e) {
 
-            
-
-            using (_TestContext db = new _TestContext()) {
-                Publisher p = db.Publishers.Find(id);
-
-            
+            newName = tbEditPub.Text.ToString();
+            if (CrudWpfControls.PubCompare(newName) == false)
+            {
+                MessageBox.Show(newName + " уже есть, или тоже самое имя");
+                return;
             }
+            //MessageBox.Show(newName);
+            CrudWpfControls.EditPublisher(id, newName);
+            Close();
+
 
         }
 

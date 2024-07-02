@@ -56,9 +56,10 @@ namespace WpfAppTestDb {
             int i = pubDataGrid.SelectedIndex;
             //var s = pubDataGrid.Items.GetItemAt(1);
             Publisher pub = (Publisher)pubDataGrid.Items.GetItemAt(i);
-            MessageBox.Show("get item "+"ID " + pub.Id.ToString() +"Title " + pub.Name.ToString());
+            //MessageBox.Show("get item "+"ID " + pub.Id.ToString() +"Title " + pub.Name.ToString());
             PublisherEditWindow editWindow = new PublisherEditWindow(pub);
             editWindow.ShowDialog();
+            pubDataGridUpdate();
 
 
            // MessageBox.Show("index "+i.ToString());

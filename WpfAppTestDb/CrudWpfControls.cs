@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace WpfAppTestDb {
     public static class CrudWpfControls {
@@ -41,6 +42,7 @@ namespace WpfAppTestDb {
                 Publisher publisher = db.Publishers.Find(id);
                 publisher.Name = newName;
                 db.SaveChanges();
+                MessageBox.Show("done uspeshno");
             
             }
         }

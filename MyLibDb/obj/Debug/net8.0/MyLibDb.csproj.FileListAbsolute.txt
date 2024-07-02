@@ -24,3 +24,16 @@ D:\NelLearn\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.dll
 D:\NelLearn\gamedb1\MyLibDb\obj\Debug\net8.0\refint\MyLibDb.dll
 D:\NelLearn\gamedb1\MyLibDb\obj\Debug\net8.0\MyLibDb.pdb
 D:\NelLearn\gamedb1\MyLibDb\obj\Debug\net8.0\ref\MyLibDb.dll
+E:\vs\projects\gamedb\MyLibDb\bin\Debug\net8.0\MyLibDb.deps.json
+E:\vs\projects\gamedb\MyLibDb\bin\Debug\net8.0\MyLibDb.dll
+E:\vs\projects\gamedb\MyLibDb\bin\Debug\net8.0\MyLibDb.pdb
+E:\vs\projects\gamedb\MyLibDb\obj\Debug\net8.0\MyLibDb.csproj.AssemblyReference.cache
+E:\vs\projects\gamedb\MyLibDb\obj\Debug\net8.0\MyLibDb.GeneratedMSBuildEditorConfig.editorconfig
+E:\vs\projects\gamedb\MyLibDb\obj\Debug\net8.0\MyLibDb.AssemblyInfoInputs.cache
+E:\vs\projects\gamedb\MyLibDb\obj\Debug\net8.0\MyLibDb.AssemblyInfo.cs
+E:\vs\projects\gamedb\MyLibDb\obj\Debug\net8.0\MyLibDb.csproj.CoreCompileInputs.cache
+E:\vs\projects\gamedb\MyLibDb\obj\Debug\net8.0\MyLibDb.sourcelink.json
+E:\vs\projects\gamedb\MyLibDb\obj\Debug\net8.0\MyLibDb.dll
+E:\vs\projects\gamedb\MyLibDb\obj\Debug\net8.0\refint\MyLibDb.dll
+E:\vs\projects\gamedb\MyLibDb\obj\Debug\net8.0\MyLibDb.pdb
+E:\vs\projects\gamedb\MyLibDb\obj\Debug\net8.0\ref\MyLibDb.dll
