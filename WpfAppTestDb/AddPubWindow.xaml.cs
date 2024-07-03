@@ -64,5 +64,13 @@ namespace WpfAppTestDb {
 
            // MessageBox.Show("index "+i.ToString());
         }
+
+        private void btnDelPub_Click(object sender, RoutedEventArgs e)
+        {
+            int i = pubDataGrid.SelectedIndex;
+            //var s = pubDataGrid.Items.GetItemAt(1);
+            Publisher pub = (Publisher)pubDataGrid.Items.GetItemAt(i);
+            CrudWpfControls.tempDel(pub);
+        }
     }
 }

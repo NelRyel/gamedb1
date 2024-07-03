@@ -11,16 +11,21 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <DataGrid AutoGenerateColumns="False" Grid.Column="0" Margin="5 5 5 5" x:Name="pubDataGrid" IsReadOnly="True" MouseDoubleClick="pubDataGrid_MouseDoubleClick">
-            <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />
-                <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />
-            </DataGrid.Columns>
-        </DataGrid>
+        <StackPanel Grid.Column="0" Margin="5" Orientation="Vertical">
+            <Label >double click to edit</Label>
+            <DataGrid AutoGenerateColumns="False" Grid.Column="0" Margin="5 5 5 5" x:Name="pubDataGrid" IsReadOnly="True" MouseDoubleClick="pubDataGrid_MouseDoubleClick">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />
+                    <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+
         <StackPanel Grid.Column="1" Margin="5" Orientation="Vertical">
             <Label Margin="5">Название издателя </Label>
             <TextBox Margin="5" x:Name="tbPub" Height="40"></TextBox>
             <Button Margin="5" x:Name="btnPubAdd" Height="25" Click="btnPubAdd_Click"> + Add + </Button>
+            <Button Margin="5" x:Name="btnDelPub" Height="25" Click="btnDelPub_Click"> del selected </Button>
         </StackPanel>
 
     </Grid>
