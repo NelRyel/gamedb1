@@ -200,3 +200,7 @@ E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\refint\WpfAppTestDb.
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\WpfAppTestDb.pdb
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\WpfAppTestDb.genruntimeconfig.cache
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\ref\WpfAppTestDb.dll
+D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\EditDevWindow.g.cs
+D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\EditDevWindow.baml
+D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\EditDivDial.g.cs
+D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\EditDivDial.baml

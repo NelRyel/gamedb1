@@ -68,9 +68,15 @@ namespace WpfAppTestDb {
         private void btnDelPub_Click(object sender, RoutedEventArgs e)
         {
             int i = pubDataGrid.SelectedIndex;
-            //var s = pubDataGrid.Items.GetItemAt(1);
+            if (i == -1) {
+                MessageBox.Show("select wrong item");
+                return;
+            }
+            var s = pubDataGrid.Items.GetItemAt(1);
             Publisher pub = (Publisher)pubDataGrid.Items.GetItemAt(i);
             CrudWpfControls.tempDel(pub);
+            pubDataGridUpdate();
+
         }
     }
 }

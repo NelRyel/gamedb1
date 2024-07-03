@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\
+D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\
 WpfAppTestDb
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-E:\vs\projects\gamedb\WpfAppTestDb\App.xaml
-31088771141
+D:\NelLearn\gamedb1\WpfAppTestDb\App.xaml
+5877499513
 
-8-703875779
-245502751283
-AddPubWindow.xaml;MainWindow.xaml;PublisherEditWindow.xaml;
+10-617099185
+24562631628
+AddPubWindow.xaml;EditDevWindow.xaml;EditDivDial.xaml;MainWindow.xaml;PublisherEditWindow.xaml;
 
 False
 

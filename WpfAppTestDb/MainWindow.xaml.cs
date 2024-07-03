@@ -79,5 +79,12 @@ namespace WpfAppTestDb {
             addPubWindow.Show();
 
         }
+
+        private void Button_Click_Dev(object sender, RoutedEventArgs e) {
+            EditDevWindow editDevWindow = new EditDevWindow();
+            editDevWindow.Owner = this;
+            editDevWindow.Show();
+
+        }
     }
 }

@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppTestDb"
         mc:Ignorable="d"
-        Title="凸(⊙▂⊙✖ )" Height="450" Width="800">
+        Title="凸(⊙▂⊙✖ )" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         
 
@@ -27,7 +28,7 @@
             <Button MinWidth="30" Width="80" Content="add game" Margin="5" />
             <Button MinWidth="30" Width="80" Content="Genres" Margin="5"  />
             <Button MinWidth="30" Width="80" Content="Publishers" Margin="5" Click="Button_ClickAddPub"/>
-            <Button MinWidth="30" Width="80" Content="Developers" Margin="5" />
+            <Button MinWidth="30" Width="80" Content="Developers" Margin="5" Click="Button_Click_Dev" />
             <Button MinWidth="30" Width="80" Content="Platforms" Margin="5" />
         </StackPanel>
 

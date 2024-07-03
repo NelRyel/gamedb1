@@ -19,7 +19,7 @@ namespace WpfAppTestDb {
     /// </summary>
     public partial class PublisherEditWindow : Window {
         int id;
-        string newName;
+        string newName = "";
         public PublisherEditWindow(Publisher publisher) {
             InitializeComponent();
             id = publisher.Id;
