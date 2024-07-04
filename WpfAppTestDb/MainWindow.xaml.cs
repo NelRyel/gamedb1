@@ -86,5 +86,10 @@ namespace WpfAppTestDb {
             editDevWindow.Show();
 
         }
+
+        private void Button_Click_Genre(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

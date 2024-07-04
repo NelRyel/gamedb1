@@ -204,3 +204,7 @@ D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\EditDevWindow.g.cs
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\EditDevWindow.baml
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\EditDivDial.g.cs
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\EditDivDial.baml
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\EditDevWindow.g.cs
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\EditDivDial.g.cs
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\EditDevWindow.baml
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\EditDivDial.baml

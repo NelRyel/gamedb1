@@ -3327,23 +3327,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NelRyel\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "E:\\vs\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NelLearn\\gamedb1\\WpfAppTestDb\\WpfAppTestDb.csproj",
+      "projectUniqueName": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\WpfAppTestDb.csproj",
       "projectName": "WpfAppTestDb",
-      "projectPath": "D:\\NelLearn\\gamedb1\\WpfAppTestDb\\WpfAppTestDb.csproj",
-      "packagesPath": "C:\\Users\\NelRyel\\.nuget\\packages\\",
-      "outputPath": "D:\\NelLearn\\gamedb1\\WpfAppTestDb\\obj\\",
+      "projectPath": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\WpfAppTestDb.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "E:\\vs\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\NelRyel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3358,8 +3359,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\NelLearn\\gamedb1\\MyLibDb\\MyLibDb.csproj": {
-              "projectPath": "D:\\NelLearn\\gamedb1\\MyLibDb\\MyLibDb.csproj"
+            "E:\\vs\\projects\\gamedb\\MyLibDb\\MyLibDb.csproj": {
+              "projectPath": "E:\\vs\\projects\\gamedb\\MyLibDb\\MyLibDb.csproj"
             }
           }
         }
@@ -3403,7 +3404,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
