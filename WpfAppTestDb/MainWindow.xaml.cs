@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfAppTestDb.platformCrud;
 using static System.Windows.Forms.LinkLabel;
 
 namespace WpfAppTestDb {
@@ -89,7 +90,20 @@ namespace WpfAppTestDb {
 
         private void Button_Click_Genre(object sender, RoutedEventArgs e)
         {
+            EditGenreWindow editGenrWindow = new EditGenreWindow();
+            editGenrWindow.Owner = this;
+            editGenrWindow.Show();
 
+        }
+
+       
+        
+
+        private void btnPlatforms_Click_1(object sender, RoutedEventArgs e)
+        {
+            EditPlatformWindow editPlatformWindow = new EditPlatformWindow();
+            editPlatformWindow.Owner = this;
+            editPlatformWindow.Show();
         }
     }
 }

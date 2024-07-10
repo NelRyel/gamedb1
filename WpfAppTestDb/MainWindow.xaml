@@ -29,7 +29,7 @@
             <Button MinWidth="30" Width="80" Content="Genres" Margin="5" Click="Button_Click_Genre"  />
             <Button MinWidth="30" Width="80" Content="Publishers" Margin="5" Click="Button_ClickAddPub"/>
             <Button MinWidth="30" Width="80" Content="Developers" Margin="5" Click="Button_Click_Dev" />
-            <Button MinWidth="30" Width="80" Content="Platforms" Margin="5" />
+            <Button x:Name="btnPlatforms" MinWidth="30" Width="80" Content="Platforms" Margin="5" Click="btnPlatforms_Click_1" />
         </StackPanel>
 
 

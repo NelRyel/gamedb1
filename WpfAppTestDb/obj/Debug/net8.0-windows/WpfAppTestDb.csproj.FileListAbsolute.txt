@@ -208,3 +208,13 @@ E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\EditDevWindow.g.cs
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\EditDivDial.g.cs
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\EditDevWindow.baml
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\EditDivDial.baml
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\genreCRUD\EditGenreWindow.g.cs
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\genreCRUD\EditGenreWindow.baml
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\genreCRUD\genreDialCU.g.cs
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\genreCRUD\genreDialCU.baml
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\platformCrud\EditPlatformWindow.g.cs
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\platformCrud\EditPlatformWindow.baml
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\YesNo.g.cs
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\YesNo.baml
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\platformCrud\PlatformCUdial.g.cs
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\platformCrud\PlatformCUdial.baml

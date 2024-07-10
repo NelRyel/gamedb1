@@ -21,6 +21,24 @@ namespace WpfAppTestDb {
             }
         
         }
+
+        public static bool GenreCompare(string name)
+        {
+            using (_TestContext db = new _TestContext())
+            {
+                List<Genre> g = db.Genres.ToList();
+                for (int i = 0; i < g.Count; i++)
+                {
+                    if (name == g[i].Name)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+        }
+
         public static bool DevCompare(string name) {
             using (_TestContext db = new _TestContext()) {
                 List<Developer> dev = db.Developers.ToList();
@@ -33,7 +51,43 @@ namespace WpfAppTestDb {
             }
 
         }
+        public static bool PlatCompare(string name)
+        {
+            using (_TestContext db = new _TestContext())
+            {
+                List<Platform> p = db.Platforms.ToList();
+                for (int i = 0; i < p.Count; i++)
+                {
+                    if (name == p[i].Name)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
 
+        }
+        public static void AddPlatform(string name)
+        {
+            using (_TestContext db = new _TestContext())
+            {
+                Platform p = new Platform();
+                p.Name = name;
+                db.Platforms.Add(p);
+                db.SaveChanges();
+            }
+        }
+
+        public static void AddGenre(string name)
+        {
+            using (_TestContext db = new _TestContext())
+            {
+                Genre g = new Genre();
+                g.Name = name;
+                db.Genres.Add(g);
+                db.SaveChanges();
+            }
+        }
 
         public static void AddPublisher(string name) {
             using (_TestContext db = new _TestContext()) {
@@ -83,12 +137,22 @@ namespace WpfAppTestDb {
                         db.SaveChanges();
                         return;
                     }
+                    if(t is Platform plt)
+                    {
+                        int i = plt.Id;
+                        MessageBox.Show("Platrform - " + i.ToString());
+                        Platform platform = db.Platforms.Find(plt.Id);
+                        db.Platforms.Remove(platform);
+                        db.SaveChanges();
+                        return;
+                    }
+                    
                 }
                 catch (Exception e) {
                     MessageBox.Show(e.ToString());
                 }
 
-
+               
 
 
             }
@@ -111,11 +175,33 @@ namespace WpfAppTestDb {
             
             }
         }
+        public static void EditPlatform(int id, string newName)
+        {
+            using (_TestContext db = new _TestContext())
+            {
+                Platform plt = db.Platforms.Find(id);
+                plt.Name = newName;
+                db.SaveChanges();
+                MessageBox.Show("done uspeshno");
+
+            }
+        }
 
         public static void EditDev(int id, string newName) {
             using (_TestContext db = new _TestContext()) {
                 Developer developer = db.Developers.Find(id);
                 developer.Name = newName;
+                db.SaveChanges();
+                MessageBox.Show("done uspeshno");
+
+            }
+        }
+        public static void EditGenre(int id, string newName)
+        {
+            using (_TestContext db = new _TestContext())
+            {
+                Genre g = db.Genres.Find(id);
+                g.Name = newName;
                 db.SaveChanges();
                 MessageBox.Show("done uspeshno");
 

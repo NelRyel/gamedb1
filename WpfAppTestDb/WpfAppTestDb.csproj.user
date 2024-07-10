@@ -16,7 +16,22 @@
     <Compile Update="EditDivDial.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="genreCRUD\EditGenreWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="genreCRUD\genreDialCU.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="platformCrud\EditPlatformWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="platformCrud\PlatformCUdial.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="PublisherEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="YesNo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -30,10 +45,25 @@
     <Page Update="EditDivDial.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="genreCRUD\EditGenreWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="genreCRUD\genreDialCU.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="platformCrud\EditPlatformWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="platformCrud\PlatformCUdial.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="PublisherEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="YesNo.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
