@@ -55,6 +55,15 @@ namespace WpfAppTestDb
             // var s = devDataGrid.Items.GetItemAt(1);
             Genre g = (Genre)genreDataGrid.Items.GetItemAt(i);
             MessageBox.Show("ID - " + g.Id + "Name - " + g.Name);
+            string msg = "Точно удалить ID - " + g.Id + " Name - " + g.Name;
+
+            YesNo yesNo = new YesNo(msg);
+            if (yesNo.ShowDialog() == false)
+            {
+                //MessageBox.Show("no no");
+                return;
+            }
+
             CrudWpfControls.tempDel(g);
             GenreDataGridUpdate();
         }

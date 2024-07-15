@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "E:\\vs\\projects\\gamedb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|e:\\vs\\projects\\gamedb\\wpfapptestdb\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|solutionrelative:wpfapptestdb\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|e:\\vs\\projects\\gamedb\\wpfapptestdb\\updatedatagrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|solutionrelative:wpfapptestdb\\updatedatagrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|e:\\vs\\projects\\gamedb\\wpfapptestdb\\genrecrud\\editgenrewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|solutionrelative:wpfapptestdb\\genrecrud\\editgenrewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|e:\\vs\\projects\\gamedb\\wpfapptestdb\\platformcrud\\editplatformwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|solutionrelative:wpfapptestdb\\platformcrud\\editplatformwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|e:\\vs\\projects\\gamedb\\wpfapptestdb\\genrecrud\\editgenrewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|solutionrelative:wpfapptestdb\\genrecrud\\editgenrewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|e:\\vs\\projects\\gamedb\\wpfapptestdb\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|solutionrelative:wpfapptestdb\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|e:\\vs\\projects\\gamedb\\wpfapptestdb\\updatedatagrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|solutionrelative:wpfapptestdb\\updatedatagrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|e:\\vs\\projects\\gamedb\\wpfapptestdb\\platformcrud\\platformcudial.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,26 +90,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "EditGenreWindow.xaml.cs",
               "DocumentMoniker": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\genreCRUD\\EditGenreWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfAppTestDb\\genreCRUD\\EditGenreWindow.xaml.cs",
               "ToolTip": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\genreCRUD\\EditGenreWindow.xaml.cs",
               "RelativeToolTip": "WpfAppTestDb\\genreCRUD\\EditGenreWindow.xaml.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAwwEcAAAAiAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowCsAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-10T12:15:21.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "EditPlatformWindow.xaml.cs",
               "DocumentMoniker": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\platformCrud\\EditPlatformWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfAppTestDb\\platformCrud\\EditPlatformWindow.xaml.cs",
               "ToolTip": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\platformCrud\\EditPlatformWindow.xaml.cs",
               "RelativeToolTip": "WpfAppTestDb\\platformCrud\\EditPlatformWindow.xaml.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAmwCUAAAAhAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAmwD8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-10T12:13:31.082Z",
               "EditorCaption": ""
@@ -123,12 +123,11 @@
               "ToolTip": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\genreCRUD\\genreDialCU.xaml",
               "RelativeToolTip": "WpfAppTestDb\\genreCRUD\\genreDialCU.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-10T12:28:13.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T12:28:13.357Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UpdateDataGrid.cs",
               "DocumentMoniker": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\UpdateDataGrid.cs",
               "RelativeDocumentMoniker": "WpfAppTestDb\\UpdateDataGrid.cs",
@@ -136,12 +135,11 @@
               "RelativeToolTip": "WpfAppTestDb\\UpdateDataGrid.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T12:43:09.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T12:43:09.07Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfAppTestDb\\MainWindow.xaml",
@@ -161,8 +159,7 @@
               "RelativeToolTip": "WpfAppTestDb\\CrudWpfControls.cs",
               "ViewState": "AQIAAKMAAAAAAAAAAAAYwLgAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T13:09:19.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T13:09:19.816Z"
             },
             {
               "$type": "Document",
@@ -174,8 +171,7 @@
               "RelativeToolTip": "WpfAppTestDb\\platformCrud\\PlatformCUdial.xaml.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAgwEQAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T13:17:04.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T13:17:04.472Z"
             },
             {
               "$type": "Document",
@@ -187,8 +183,7 @@
               "RelativeToolTip": "WpfAppTestDb\\genreCRUD\\genreDialCU.xaml.cs",
               "ViewState": "AQIAADkAAAAAAAAAAAAowFkAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T12:15:29.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T12:15:29.418Z"
             },
             {
               "$type": "Document",
@@ -199,8 +194,7 @@
               "ToolTip": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\platformCrud\\PlatformCUdial.xaml",
               "RelativeToolTip": "WpfAppTestDb\\platformCrud\\PlatformCUdial.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-10T13:16:45.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T13:16:45.301Z"
             },
             {
               "$type": "Document",
@@ -211,8 +205,7 @@
               "ToolTip": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\platformCrud\\EditPlatformWindow.xaml",
               "RelativeToolTip": "WpfAppTestDb\\platformCrud\\EditPlatformWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-10T11:57:42.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T11:57:42.7Z"
             },
             {
               "$type": "Document",
@@ -223,8 +216,7 @@
               "ToolTip": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\YesNo.xaml",
               "RelativeToolTip": "WpfAppTestDb\\YesNo.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-10T12:27:23.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T12:27:23.845Z"
             },
             {
               "$type": "Document",
@@ -236,8 +228,7 @@
               "RelativeToolTip": "WpfAppTestDb\\YesNo.xaml.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAlwBwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T12:31:31.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T12:31:31.776Z"
             },
             {
               "$type": "Document",
@@ -249,8 +240,7 @@
               "RelativeToolTip": "WpfAppTestDb\\PublisherEditWindow.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T12:34:34.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T12:34:34.031Z"
             },
             {
               "$type": "Document",
@@ -262,8 +252,7 @@
               "RelativeToolTip": "WpfAppTestDb\\MainWindow.xaml.cs",
               "ViewState": "AQIAAEYAAAAAAAAAAAAlwGEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T11:54:07.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T11:54:07.935Z"
             },
             {
               "$type": "Document",
@@ -274,8 +263,7 @@
               "ToolTip": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\genreCRUD\\EditGenreWindow.xaml",
               "RelativeToolTip": "WpfAppTestDb\\genreCRUD\\EditGenreWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-10T11:59:23.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T11:59:23.81Z"
             }
           ]
         }
