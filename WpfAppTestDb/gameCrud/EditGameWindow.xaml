@@ -1,0 +1,52 @@
+﻿<Window x:Class="WpfAppTestDb.gameCrud.EditGameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppTestDb.gameCrud"
+        mc:Ignorable="d"
+        Title="EditGameWindow" Height="480" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Grid ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="60"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center">Enter Name: </TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="0" Margin="5" HorizontalAlignment="Left" VerticalAlignment="Center" Height="30" x:Name="txtBoxName"  >entered name</TextBox>
+        <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center">Description: </TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Margin="5" x:Name="txtBoxDesc" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" SpellCheck.IsEnabled="True" Language="ru-ru"></TextBox>
+        <TextBlock Grid.Column="0" Grid.Row="3" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Center" >Genre: </TextBlock>
+        <DataGrid Grid.Column="1" Grid.Row="3" Margin="5" VerticalScrollBarVisibility="Auto" x:Name="dtGrdGenre"> </DataGrid>
+        <TextBlock Grid.Column="0" Grid.Row="4" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Right" >Publisher: </TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="4" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" x:Name="tbSelectedPub" >selected Publisher</TextBlock>
+
+        <TextBlock Grid.Column="0" Grid.Row="5" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Right" >Developer: </TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="5" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" x:Name="tbSelectedDev" >selected Dev</TextBlock>
+
+        <StackPanel Grid.Column="2" Grid.Row="3" Orientation="Vertical" HorizontalAlignment="Left" Margin="5">
+            <Button Margin="2" x:Name="btnAddGenre" Padding="5"> + </Button>
+            <Button Margin="2" x:Name="btnDelGenre" Padding="5"> - </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Grid.Row="4" Orientation="Vertical" HorizontalAlignment="Left" Margin="5">
+            <Button Margin="2" x:Name="btnAddPub" Padding="5">+</Button>
+            <Button Margin="2" x:Name="btnDelPub" Padding="5">-</Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Grid.Row="5" Orientation="Vertical" HorizontalAlignment="Left" Margin="5">
+            <Button Margin="2" x:Name="btnAddDev" Padding="5">+</Button>
+            <Button Margin="2" x:Name="btnDelDev" Padding="5">-</Button>
+        </StackPanel>
+
+    </Grid>
+</Window>

@@ -16,6 +16,9 @@
     <Compile Update="EditDivDial.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="gameCrud\EditGameWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="genreCRUD\EditGenreWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -43,6 +46,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="EditDivDial.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="gameCrud\EditGameWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="genreCRUD\EditGenreWindow.xaml">

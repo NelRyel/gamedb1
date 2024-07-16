@@ -218,3 +218,5 @@ E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\YesNo.g.cs
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\YesNo.baml
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\platformCrud\PlatformCUdial.g.cs
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\platformCrud\PlatformCUdial.baml
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\gameCrud\EditGameWindow.g.cs
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\gameCrud\EditGameWindow.baml

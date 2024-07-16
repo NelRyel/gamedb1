@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfAppTestDb.gameCrud;
 using WpfAppTestDb.platformCrud;
 using static System.Windows.Forms.LinkLabel;
 
@@ -104,6 +105,14 @@ namespace WpfAppTestDb {
             EditPlatformWindow editPlatformWindow = new EditPlatformWindow();
             editPlatformWindow.Owner = this;
             editPlatformWindow.Show();
+        }
+
+        private void btnAddGame_Click(object sender, RoutedEventArgs e)
+        {
+            EditGameWindow editGame = new EditGameWindow();
+            editGame.Owner = this;
+            editGame.ShowDialog();
+            UpdaterDataGrid();
         }
     }
 }

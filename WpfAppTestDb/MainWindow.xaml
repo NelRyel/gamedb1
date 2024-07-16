@@ -25,7 +25,7 @@
         </DataGrid>
         <!--<Button Content="Add" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="50"/>-->
         <StackPanel Orientation="Horizontal" Height="50" Margin="5,10,5,355">
-            <Button MinWidth="30" Width="80" Content="add game" Margin="5" />
+            <Button MinWidth="30" Width="80" Content="add game" Margin="5" x:Name="btnAddGame" Click="btnAddGame_Click" />
             <Button MinWidth="30" Width="80" Content="Genres" Margin="5" Click="Button_Click_Genre"  />
             <Button MinWidth="30" Width="80" Content="Publishers" Margin="5" Click="Button_ClickAddPub"/>
             <Button MinWidth="30" Width="80" Content="Developers" Margin="5" Click="Button_Click_Dev" />
