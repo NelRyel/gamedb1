@@ -220,3 +220,7 @@ E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\platformCrud\Platfor
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\platformCrud\PlatformCUdial.baml
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\gameCrud\EditGameWindow.g.cs
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\gameCrud\EditGameWindow.baml
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\publisherCrudNew\EditPubWindow.g.cs
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\publisherCrudNew\PublisherDialCU.g.cs
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\publisherCrudNew\EditPubWindow.baml
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\publisherCrudNew\PublisherDialCU.baml

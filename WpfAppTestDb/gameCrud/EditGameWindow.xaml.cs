@@ -23,5 +23,31 @@ namespace WpfAppTestDb.gameCrud
         {
             InitializeComponent();
         }
+
+
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void btnOk_Click(object sender, RoutedEventArgs e)
+        {
+            string name = txtBoxName.Text;
+            string decs = txtBoxDesc.Text;
+
+
+            MessageBox.Show(name);
+        }
+
+        private void btnDelPub_Click(object sender, RoutedEventArgs e)
+        {
+            tbSelectedPub.Text = null;
+        }
+
+        private void btnAddPub_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

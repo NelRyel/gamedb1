@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppTestDb.gameCrud"
         mc:Ignorable="d"
-        Title="EditGameWindow" Height="480" Width="400"
+        Title="EditGameWindow" Height="550" Width="400"
         WindowStartupLocation="CenterScreen">
     <Grid ShowGridLines="False">
         <Grid.RowDefinitions>
@@ -15,14 +15,17 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="80"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition Width="60"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center">Enter Name: </TextBlock>
-        <TextBox Grid.Column="1" Grid.Row="0" Margin="5" HorizontalAlignment="Left" VerticalAlignment="Center" Height="30" x:Name="txtBoxName"  >entered name</TextBox>
+        <TextBox Grid.Column="1" Grid.Row="0" Margin="5" Height="50" x:Name="txtBoxName"  >entered name</TextBox>
         <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center">Description: </TextBlock>
         <TextBox Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Margin="5" x:Name="txtBoxDesc" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" SpellCheck.IsEnabled="True" Language="ru-ru"></TextBox>
         <TextBlock Grid.Column="0" Grid.Row="3" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Center" >Genre: </TextBlock>
@@ -33,19 +36,34 @@
         <TextBlock Grid.Column="0" Grid.Row="5" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Right" >Developer: </TextBlock>
         <TextBlock Grid.Column="1" Grid.Row="5" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" x:Name="tbSelectedDev" >selected Dev</TextBlock>
 
-        <StackPanel Grid.Column="2" Grid.Row="3" Orientation="Vertical" HorizontalAlignment="Left" Margin="5">
+        <StackPanel Grid.Column="2" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
             <Button Margin="2" x:Name="btnAddGenre" Padding="5"> + </Button>
             <Button Margin="2" x:Name="btnDelGenre" Padding="5"> - </Button>
         </StackPanel>
 
-        <StackPanel Grid.Column="2" Grid.Row="4" Orientation="Vertical" HorizontalAlignment="Left" Margin="5">
-            <Button Margin="2" x:Name="btnAddPub" Padding="5">+</Button>
-            <Button Margin="2" x:Name="btnDelPub" Padding="5">-</Button>
+        <StackPanel Grid.Column="2" Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
+            <Button Margin="2" x:Name="btnAddPub" Padding="5" Click="btnAddPub_Click">+</Button>
+            <Button Margin="2" x:Name="btnDelPub" Padding="5" Click="btnDelPub_Click">-</Button>
         </StackPanel>
 
-        <StackPanel Grid.Column="2" Grid.Row="5" Orientation="Vertical" HorizontalAlignment="Left" Margin="5">
+        <StackPanel Grid.Column="2" Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
             <Button Margin="2" x:Name="btnAddDev" Padding="5">+</Button>
             <Button Margin="2" x:Name="btnDelDev" Padding="5">-</Button>
+        </StackPanel>
+        
+              <TextBlock Grid.Column="0" Grid.Row="6" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Right" >Platform: </TextBlock>
+        <DataGrid Grid.Column="1" Grid.Row="6" Margin="5" VerticalScrollBarVisibility="Auto" x:Name="dtGrdPlat"></DataGrid>
+
+        <StackPanel Grid.Column="2" Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
+            <Button Margin="2" x:Name="btnAddPlatform" Padding="5">+</Button>
+            <Button Margin="2" x:Name="btnDelPlatform" Padding="5">-</Button>
+        </StackPanel>
+
+
+
+        <StackPanel Grid.Column="1" Grid.Row="7" Margin="5" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Margin="5" x:Name="btnOk" Width="50" Padding="5" Click="btnOk_Click">Ok</Button>
+            <Button Margin="5" x:Name="btnCancel" Width="50" Padding="5" Click="btnCancel_Click">Cancel</Button>
         </StackPanel>
 
     </Grid>

@@ -12,6 +12,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfAppTestDb.gameCrud;
 using WpfAppTestDb.platformCrud;
+using WpfAppTestDb.publisherCrudNew;
 using static System.Windows.Forms.LinkLabel;
 
 namespace WpfAppTestDb {
@@ -76,9 +77,13 @@ namespace WpfAppTestDb {
         }
 
         private void Button_ClickAddPub(object sender, RoutedEventArgs e) {
-            AddPubWindow addPubWindow = new AddPubWindow();
-            addPubWindow.Owner =   this;
-            addPubWindow.Show();
+            //AddPubWindow addPubWindow = new AddPubWindow();
+            //addPubWindow.Owner = this;
+            //addPubWindow.Show();
+            EditPubWindow editPubWindow = new EditPubWindow();
+            editPubWindow.Owner = this;
+            editPubWindow.Show();
+
 
         }
 

@@ -20,9 +20,10 @@ namespace WpfAppTestDb.platformCrud
     /// </summary>
     public partial class EditPlatformWindow : Window
     {
-        public EditPlatformWindow()
+        public EditPlatformWindow(bool ForEditGame = false)
         {
             InitializeComponent();
+
             PlatDataGridUpdate();
         }
 

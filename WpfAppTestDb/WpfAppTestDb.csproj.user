@@ -31,6 +31,12 @@
     <Compile Update="platformCrud\PlatformCUdial.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="publisherCrudNew\EditPubWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="publisherCrudNew\PublisherDialCU.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="PublisherEditWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -64,6 +70,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="platformCrud\PlatformCUdial.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="publisherCrudNew\EditPubWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="publisherCrudNew\PublisherDialCU.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PublisherEditWindow.xaml">
