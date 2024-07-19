@@ -24,7 +24,11 @@
             </StackPanel>
      <StackPanel Grid.Row="1" Margin="5 5 5 5" Orientation="Vertical">
          <Label >double click to edit</Label>
-         <DataGrid AutoGenerateColumns="False" Grid.Row="1" Margin="5 5 5 5" x:Name="devDataGrid" IsReadOnly="True" MouseDoubleClick="devDataGrid_MouseDoubleClick" >
+                <StackPanel Margin="5" Orientation="Horizontal">
+                    <TextBox Margin="5" Padding="4" Width="50">ID</TextBox>
+                    <TextBox Margin="5" Padding="4" Width="300" >TITLE TITLE</TextBox>
+                </StackPanel>
+         <DataGrid AutoGenerateColumns="False" Grid.Row="1" Margin="5 5 5 5" x:Name="devDataGrid" IsReadOnly="True" >
              <DataGrid.Columns>
                  <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />
                  <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />

@@ -18,8 +18,12 @@ namespace WpfAppTestDb {
     /// Логика взаимодействия для EditDevWindow.xaml
     /// </summary>
     public partial class EditDevWindow : Window {
-        public EditDevWindow() {
+       public Developer developer;
+
+        public EditDevWindow(bool ForEditGame = false) {
             InitializeComponent();
+            devDataGrid.MouseDoubleClick += (ForEditGame == true) ? devDataGrid_MouseDoubleClickForGameEdit : devDataGrid_MouseDoubleClick;
+
             DevDataGridUpdate();
         }
 
@@ -56,14 +60,29 @@ namespace WpfAppTestDb {
 
         }
 
+        private void devDataGrid_MouseDoubleClickForGameEdit(object sender, MouseButtonEventArgs e)
+        {
+            //bool Click_DblClick = false;
+
+            int i = devDataGrid.SelectedIndex;
+            Developer dev = (Developer)devDataGrid.Items.GetItemAt(i);
+            MessageBox.Show("get item " + "ID " + dev.Id.ToString() + " Title " + dev.Name.ToString());
+            developer = dev;
+            Close();
+
+
+
+        }
+
+
         private void devDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e) {
-            bool Click_DblClick = false;
+            //bool Click_DblClick = false;
 
             int i = devDataGrid.SelectedIndex;
             //var s = pubDataGrid.Items.GetItemAt(1);
             Developer dev = (Developer)devDataGrid.Items.GetItemAt(i);
             MessageBox.Show("get item "+"ID " + dev.Id.ToString() +" Title " + dev.Name.ToString());
-            EditDivDial editDivDial = new EditDivDial(Click_DblClick, dev);
+            EditDivDial editDivDial = new EditDivDial(false, dev);
             editDivDial.ShowDialog();
             DevDataGridUpdate();
 

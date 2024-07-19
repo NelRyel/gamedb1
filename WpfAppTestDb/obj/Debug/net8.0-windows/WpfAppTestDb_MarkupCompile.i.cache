@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 E:\vs\projects\gamedb\WpfAppTestDb\App.xaml
-13267474339
+13-1959251827
 
-201635284393
+2054404890
 245502751283
-AddPubWindow.xaml;EditDevWindow.xaml;EditDivDial.xaml;gameCrud\EditGameWindow.xaml;genreCRUD\EditGenreWindow.xaml;genreCRUD\genreDialCU.xaml;MainWindow.xaml;platformCrud\EditPlatformWindow.xaml;platformCrud\PlatformCUdial.xaml;publisherCrudNew\EditPubWindow.xaml;publisherCrudNew\PublisherDialCU.xaml;PublisherEditWindow.xaml;YesNo.xaml;
+AddPubWindow.xaml;developerCrud\EditDevWindow.xaml;developerCrud\EditDivDial.xaml;gameCrud\EditGameWindow.xaml;genreCRUD\EditGenreWindow.xaml;genreCRUD\genreDialCU.xaml;MainWindow.xaml;platformCrud\EditPlatformWindow.xaml;platformCrud\PlatformCUdial.xaml;publisherCrudNew\EditPubWindow.xaml;publisherCrudNew\PublisherDialCU.xaml;PublisherEditWindow.xaml;YesNo.xaml;
 
-True
+False
 

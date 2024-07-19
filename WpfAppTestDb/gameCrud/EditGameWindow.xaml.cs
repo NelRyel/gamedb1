@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyLibDb;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfAppTestDb.publisherCrudNew;
 
 namespace WpfAppTestDb.gameCrud
 {
@@ -19,6 +21,11 @@ namespace WpfAppTestDb.gameCrud
     /// </summary>
     public partial class EditGameWindow : Window
     {
+        Publisher pub;
+        Developer dev;
+        List<Platform> platforms;
+
+
         public EditGameWindow()
         {
             InitializeComponent();
@@ -43,11 +50,41 @@ namespace WpfAppTestDb.gameCrud
         private void btnDelPub_Click(object sender, RoutedEventArgs e)
         {
             tbSelectedPub.Text = null;
+            pub = null;
         }
 
         private void btnAddPub_Click(object sender, RoutedEventArgs e)
         {
+            EditPubWindow editPubWindow = new EditPubWindow(true);
+            editPubWindow.ShowDialog();
 
+            if (editPubWindow.pp == null)
+            {
+                System.Windows.Forms.MessageBox.Show("wrong item pub");
+                return;
+            }
+            pub = editPubWindow.pp;
+            tbSelectedPub.Text = pub.Name;
+        }
+
+        private void btnAddDev_Click(object sender, RoutedEventArgs e)
+        {
+            EditDevWindow editDevWindow = new EditDevWindow(true);
+            editDevWindow.ShowDialog();
+            if(editDevWindow.developer == null)
+            {
+                System.Windows.Forms.MessageBox.Show("wrong item dev");
+                return;
+            }
+            dev = editDevWindow.developer;
+            tbSelectedDev.Text = dev.Name;
+
+        }
+
+        private void btnDelDev_Click(object sender, RoutedEventArgs e)
+        {
+            tbSelectedDev.Text = "";
+            dev = null;
         }
     }
 }

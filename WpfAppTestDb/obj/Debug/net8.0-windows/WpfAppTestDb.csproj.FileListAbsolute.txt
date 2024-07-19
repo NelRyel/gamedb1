@@ -204,10 +204,6 @@ D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\EditDevWindow.g.cs
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\EditDevWindow.baml
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\EditDivDial.g.cs
 D:\NelLearn\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\EditDivDial.baml
-E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\EditDevWindow.g.cs
-E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\EditDivDial.g.cs
-E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\EditDevWindow.baml
-E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\EditDivDial.baml
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\genreCRUD\EditGenreWindow.g.cs
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\genreCRUD\EditGenreWindow.baml
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\genreCRUD\genreDialCU.g.cs
@@ -224,3 +220,7 @@ E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\publisherCrudNew\Edi
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\publisherCrudNew\PublisherDialCU.g.cs
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\publisherCrudNew\EditPubWindow.baml
 E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\publisherCrudNew\PublisherDialCU.baml
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\developerCrud\EditDevWindow.g.cs
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\developerCrud\EditDivDial.g.cs
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\developerCrud\EditDevWindow.baml
+E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\developerCrud\EditDivDial.baml

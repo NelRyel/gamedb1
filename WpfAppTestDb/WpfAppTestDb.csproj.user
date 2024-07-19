@@ -10,10 +10,10 @@
     <Compile Update="AddPubWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="EditDevWindow.xaml.cs">
+    <Compile Update="developerCrud\EditDevWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="EditDivDial.xaml.cs">
+    <Compile Update="developerCrud\EditDivDial.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="gameCrud\EditGameWindow.xaml.cs">
@@ -48,10 +48,10 @@
     <Page Update="AddPubWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="EditDevWindow.xaml">
+    <Page Update="developerCrud\EditDevWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="EditDivDial.xaml">
+    <Page Update="developerCrud\EditDivDial.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="gameCrud\EditGameWindow.xaml">

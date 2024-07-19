@@ -14,18 +14,22 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using WpfAppTestDb.platformCrud;
 
+
 namespace WpfAppTestDb.publisherCrudNew
 {
     /// <summary>
     /// Логика взаимодействия для EditPubWindow.xaml
     /// </summary>
+    /// 
+   
     public partial class EditPubWindow : Window
     {
+        public Publisher? pp;
         public EditPubWindow(bool ForEditGame = false)
         {
             InitializeComponent();
-            //pubDataGrid.MouseDoubleClick += (ForEditGame == true) ? pubDataGrid_MouseDoubleClickForGameEdit : pubDataGrid_MouseDoubleClick;
-            pubDataGrid.MouseDoubleClick += pubDataGrid_MouseDoubleClickForGameEdit;
+            pubDataGrid.MouseDoubleClick += (ForEditGame == true) ? pubDataGrid_MouseDoubleClickForGameEdit : pubDataGrid_MouseDoubleClick;
+           // pubDataGrid.MouseDoubleClick += pubDataGrid_MouseDoubleClickForGameEdit;
 
             PubltDataGridUpdate();
         }
@@ -42,15 +46,22 @@ namespace WpfAppTestDb.publisherCrudNew
             PubltDataGridUpdate();
         }
 
-        private Publisher pubDataGrid_MouseDoubleClickForGameEdit(object sender, MouseButtonEventArgs e)
+        private void pubDataGrid_MouseDoubleClickForGameEdit(object sender, MouseButtonEventArgs e)
         {
             int i = pubDataGrid.SelectedIndex;
             //var s = pubDataGrid.Items.GetItemAt(1);
             Publisher pub = (Publisher)pubDataGrid.Items.GetItemAt(i);
+            pp = pub;
+           // retPub(pub);
             MessageBox.Show("get item " + "ID " + pub.Id.ToString() + " Title " + pub.Name.ToString());
             Close();
-            return pub;
+            //return pub;
             
+        }
+
+        public void retPub(Publisher publisher)
+        {
+            pp = publisher;
         }
 
 
