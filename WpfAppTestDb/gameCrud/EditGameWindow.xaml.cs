@@ -40,8 +40,18 @@ namespace WpfAppTestDb.gameCrud
 
         private void btnOk_Click(object sender, RoutedEventArgs e)
         {
+            Game game = new Game();
+            GameDescription description = new GameDescription();    
             string name = txtBoxName.Text;
             string decs = txtBoxDesc.Text;
+            game.Name = txtBoxName.Text;
+            description.Description = txtBoxDesc.Text;
+            description.Publisher = pub;
+            description.Developer = dev;
+            description.Game= game;
+
+
+
 
 
             MessageBox.Show(name);
@@ -85,6 +95,10 @@ namespace WpfAppTestDb.gameCrud
         {
             tbSelectedDev.Text = "";
             dev = null;
+        }
+
+        private void btnAddPlatform_Click(object sender, RoutedEventArgs e) {
+
         }
     }
 }

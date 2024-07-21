@@ -3327,24 +3327,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "E:\\vs\\Shared\\NuGetPackages": {}
+    "C:\\Users\\BigVitek\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\WpfAppTestDb.csproj",
+      "projectUniqueName": "E:\\nelShit\\gamedb1\\WpfAppTestDb\\WpfAppTestDb.csproj",
       "projectName": "WpfAppTestDb",
-      "projectPath": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\WpfAppTestDb.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\vs\\projects\\gamedb\\WpfAppTestDb\\obj\\",
+      "projectPath": "E:\\nelShit\\gamedb1\\WpfAppTestDb\\WpfAppTestDb.csproj",
+      "packagesPath": "C:\\Users\\BigVitek\\.nuget\\packages\\",
+      "outputPath": "E:\\nelShit\\gamedb1\\WpfAppTestDb\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "E:\\vs\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\BigVitek\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3359,8 +3354,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "E:\\vs\\projects\\gamedb\\MyLibDb\\MyLibDb.csproj": {
-              "projectPath": "E:\\vs\\projects\\gamedb\\MyLibDb\\MyLibDb.csproj"
+            "E:\\nelShit\\gamedb1\\MyLibDb\\MyLibDb.csproj": {
+              "projectPath": "E:\\nelShit\\gamedb1\\MyLibDb\\MyLibDb.csproj"
             }
           }
         }
@@ -3404,7 +3399,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

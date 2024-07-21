@@ -39,6 +39,26 @@ namespace WpfAppTestDb {
             }
         }
 
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e) {
+            if (tbTitleChange == null) {
+                return;
+            }
+            string title = tbTitleChange.Text;
+            string id = tbIdChange.Text;
+            devDataGrid.ItemsSource = null;
+            using (_TestContext db = new _TestContext()) {
+                //List<Developer> developers = db.Developers.Where(q => q.Name.Contains(title)).ToList();
+                //List<Developer> developers = db.Developers.Where(q => q.Name.ToLower().Contains(title.ToLower())).ToList();
+                List<Developer> developers = db.Developers.Where(q => q.Id.ToString().ToLower().Contains(id)).Where(w=>w.Name.ToLower().Contains(title.ToLower())).ToList();
+
+                devDataGrid.ItemsSource = developers;
+            
+            }
+
+        }
+
+
+
         private void Button_ClickDel(object sender, RoutedEventArgs e) {
             int i = devDataGrid.SelectedIndex;
             if (i == -1) {
@@ -82,8 +102,8 @@ namespace WpfAppTestDb {
             //var s = pubDataGrid.Items.GetItemAt(1);
             Developer dev = (Developer)devDataGrid.Items.GetItemAt(i);
             MessageBox.Show("get item "+"ID " + dev.Id.ToString() +" Title " + dev.Name.ToString());
-            EditDivDial editDivDial = new EditDivDial(false, dev);
-            editDivDial.ShowDialog();
+            //EditDivDial editDivDial = new EditDivDial(false, dev);
+            //editDivDial.ShowDialog();
             DevDataGridUpdate();
 
             //PublisherEditWindow editWindow = new PublisherEditWindow(pub);
@@ -92,5 +112,7 @@ namespace WpfAppTestDb {
 
 
         }
+
+       
     }
 }

@@ -55,7 +55,7 @@
         <DataGrid Grid.Column="1" Grid.Row="6" Margin="5" VerticalScrollBarVisibility="Auto" x:Name="dtGrdPlat"></DataGrid>
 
         <StackPanel Grid.Column="2" Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
-            <Button Margin="2" x:Name="btnAddPlatform" Padding="5">+</Button>
+            <Button Margin="2" x:Name="btnAddPlatform" Padding="5" Click="btnAddPlatform_Click">+</Button>
             <Button Margin="2" x:Name="btnDelPlatform" Padding="5">-</Button>
         </StackPanel>
 
