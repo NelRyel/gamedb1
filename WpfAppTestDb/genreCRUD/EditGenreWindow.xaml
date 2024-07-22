@@ -20,6 +20,10 @@
             </StackPanel>
             <StackPanel Grid.Row="1" Margin="5 5 5 5" Orientation="Vertical">
                 <Label >double click to edit</Label>
+                <StackPanel Margin="5" Orientation="Horizontal">
+                    <TextBox Margin="5 5 5 0" Padding="4" Width="50" x:Name="tbIdChange" TextChanged="TextBox_TextChanged" ></TextBox>
+                    <TextBox Margin="5 5 5 0" Padding="4" Width="300" x:Name="tbTitleChange" TextChanged="TextBox_TextChanged" ></TextBox>
+                </StackPanel>
                 <DataGrid AutoGenerateColumns="False" Grid.Row="1" Margin="5 5 5 5" x:Name="genreDataGrid" IsReadOnly="True" MouseDoubleClick="genreDataGrid_MouseDoubleClick" >
                     <DataGrid.Columns>
                         <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />

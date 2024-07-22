@@ -108,8 +108,6 @@ E:\nelShit\gamedb1\gamedb\obj\Debug\net8.0\refint\gamedb.dll
 E:\nelShit\gamedb1\gamedb\obj\Debug\net8.0\gamedb.pdb
 E:\nelShit\gamedb1\gamedb\obj\Debug\net8.0\gamedb.genruntimeconfig.cache
 E:\nelShit\gamedb1\gamedb\obj\Debug\net8.0\ref\gamedb.dll
-E:\vs\projects\gamedb\gamedb\bin\Debug\net8.0\ClassLibraryGameDb.dll
-E:\vs\projects\gamedb\gamedb\bin\Debug\net8.0\ClassLibraryGameDb.pdb
 D:\NelLearn\gamedb1\gamedb\bin\Debug\net8.0\gamedb.exe
 D:\NelLearn\gamedb1\gamedb\bin\Debug\net8.0\gamedb.deps.json
 D:\NelLearn\gamedb1\gamedb\bin\Debug\net8.0\gamedb.runtimeconfig.json

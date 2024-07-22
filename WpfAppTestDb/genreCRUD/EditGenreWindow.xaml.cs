@@ -35,7 +35,26 @@ namespace WpfAppTestDb
                 genreDataGrid.ItemsSource = dev;
             }
         }
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (tbTitleChange == null)
+            {
+                return;
+            }
+            string title = tbTitleChange.Text;
+            string id = tbIdChange.Text;
+            genreDataGrid.ItemsSource = null;
+            using (_TestContext db = new _TestContext())
+            {
+                //List<Developer> developers = db.Developers.Where(q => q.Name.Contains(title)).ToList();
+                //List<Developer> developers = db.Developers.Where(q => q.Name.ToLower().Contains(title.ToLower())).ToList();
+                List<Genre> items = db.Genres.Where(q => q.Id.ToString().ToLower().Contains(id)).Where(w => w.Name.ToLower().Contains(title.ToLower())).ToList();
 
+                genreDataGrid.ItemsSource = items;
+
+            }
+
+        }
         private void Button_ClickAddGenre(object sender, RoutedEventArgs e)
         {
 

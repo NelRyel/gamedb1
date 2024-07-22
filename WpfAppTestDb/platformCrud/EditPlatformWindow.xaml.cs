@@ -76,5 +76,27 @@ namespace WpfAppTestDb.platformCrud
                 pltDataGrid.ItemsSource = plt;
             }
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (tbTitleChange == null)
+            {
+                return;
+            }
+            string title = tbTitleChange.Text;
+            string id = tbIdChange.Text;
+            pltDataGrid.ItemsSource = null;
+            using (_TestContext db = new _TestContext())
+            {
+                //List<Developer> developers = db.Developers.Where(q => q.Name.Contains(title)).ToList();
+                //List<Developer> developers = db.Developers.Where(q => q.Name.ToLower().Contains(title.ToLower())).ToList();
+                List<Platform> items = db.Platforms.Where(q => q.Id.ToString().ToLower().Contains(id)).Where(w => w.Name.ToLower().Contains(title.ToLower())).ToList();
+
+                pltDataGrid.ItemsSource = items;
+
+            }
+
+        }
+
     }
 }
