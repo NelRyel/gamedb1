@@ -29,14 +29,21 @@ namespace WpfAppTestDb.platformCrud
 
         private void pltDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            int i = pltDataGrid.SelectedIndex;
-            //var s = pubDataGrid.Items.GetItemAt(1);
-            Platform plt = (Platform)pltDataGrid.Items.GetItemAt(i);
-            MessageBox.Show("get item " + "ID " + plt.Id.ToString() + " Title " + plt.Name.ToString());
+           
+                int i = pltDataGrid.SelectedIndex;
+                if (i == -1)
+                {
+                    return;
+                }
+                //var s = pubDataGrid.Items.GetItemAt(1);
+                Platform plt = (Platform)pltDataGrid.Items.GetItemAt(i);
+                MessageBox.Show("get item " + "ID " + plt.Id.ToString() + " Title " + plt.Name.ToString());
 
-            PlatformCUdial platformCUdial = new PlatformCUdial(false, plt);
-            platformCUdial.ShowDialog();
-            PlatDataGridUpdate();
+                PlatformCUdial platformCUdial = new PlatformCUdial(false, plt);
+                platformCUdial.ShowDialog();
+                PlatDataGridUpdate();
+            
+          
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)

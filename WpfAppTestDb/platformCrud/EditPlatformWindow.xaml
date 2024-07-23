@@ -24,15 +24,16 @@
                     <TextBox Margin="5 5 5 0" Padding="4" Width="50" x:Name="tbIdChange" TextChanged="TextBox_TextChanged" ></TextBox>
                     <TextBox Margin="5 5 5 0" Padding="4" Width="300" x:Name="tbTitleChange" TextChanged="TextBox_TextChanged" ></TextBox>
                 </StackPanel>
-                <ScrollViewer>
-                    <DataGrid AutoGenerateColumns="False" Grid.Row="1" Margin="5 5 5 5" x:Name="pltDataGrid" IsReadOnly="True" MouseDoubleClick="pltDataGrid_MouseDoubleClick"  HorizontalScrollBarVisibility="Auto"
+
+                
+                    <DataGrid Width="350" Height="280" ScrollViewer.CanContentScroll="True" AutoGenerateColumns="False" Grid.Row="1" Margin="5 5 5 5" x:Name="pltDataGrid" IsReadOnly="True" MouseDoubleClick="pltDataGrid_MouseDoubleClick"  HorizontalScrollBarVisibility="Auto"
           VerticalScrollBarVisibility="Auto">
-                        <DataGrid.Columns>
-                            <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />
-                            <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />
-                        </DataGrid.Columns>
-                    </DataGrid>
-                </ScrollViewer>
+                    <DataGrid.Columns  >
+                        <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />
+                        <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />
+                    </DataGrid.Columns>
+                </DataGrid>
+               
             </StackPanel>
 
 
