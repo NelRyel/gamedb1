@@ -10,13 +10,14 @@
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="60"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <StackPanel Height="50"  Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Margin="5,5,5,5">
+            <StackPanel x:Name="stackPanelTop" Height="50"  Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Margin="5,5,5,5">
                 <Button Margin="5" Width="40" Height="40" Click="Button_ClickAddGenre" >Add</Button>
                 <Button Margin="5" Width="40" Height="40" Click="Button_ClickDelGenre" >Del</Button>
                 <Label VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 5 5 5">- selected dev</Label>
+                <ListBox x:Name="listBoxSelectedItems" Width="150" Height="90" Visibility="Hidden" MouseDoubleClick="listBoxSelectedItems_MouseDoubleClick"></ListBox>
             </StackPanel>
             <StackPanel Grid.Row="1" Margin="5 5 5 5" Orientation="Vertical">
                 <Label >double click to edit</Label>
@@ -24,7 +25,7 @@
                     <TextBox Margin="5 5 5 0" Padding="4" Width="50" x:Name="tbIdChange" TextChanged="TextBox_TextChanged" ></TextBox>
                     <TextBox Margin="5 5 5 0" Padding="4" Width="300" x:Name="tbTitleChange" TextChanged="TextBox_TextChanged" ></TextBox>
                 </StackPanel>
-                <DataGrid AutoGenerateColumns="False" Grid.Row="1" Margin="5 5 5 5" x:Name="genreDataGrid" IsReadOnly="True" MouseDoubleClick="genreDataGrid_MouseDoubleClick" >
+                <DataGrid AutoGenerateColumns="False" Grid.Row="1" Margin="5 5 5 5" x:Name="genreDataGrid" IsReadOnly="True" >
                     <DataGrid.Columns>
                         <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />
                         <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />

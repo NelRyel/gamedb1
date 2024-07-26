@@ -37,7 +37,7 @@
         <TextBlock Grid.Column="1" Grid.Row="5" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" x:Name="tbSelectedDev" >selected Dev</TextBlock>
 
         <StackPanel Grid.Column="2" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
-            <Button Margin="2" x:Name="btnAddGenre" Padding="5"> + </Button>
+            <Button Margin="2" x:Name="btnAddGenre" Padding="5" Click="btnAddGenre_Click"> + </Button>
             <Button Margin="2" x:Name="btnDelGenre" Padding="5"> - </Button>
         </StackPanel>
 

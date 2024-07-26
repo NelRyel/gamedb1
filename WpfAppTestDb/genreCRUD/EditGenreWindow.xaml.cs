@@ -21,9 +21,17 @@ namespace WpfAppTestDb
     /// </summary>
     public partial class EditGenreWindow : Window
     {
-        public EditGenreWindow()
+        List<Genre> genreList;
+        public EditGenreWindow(bool ForEditGame = false)
         {
             InitializeComponent();
+            
+            genreDataGrid.MouseDoubleClick += (ForEditGame == true) ? genreDataGrid_MouseDoubleClickForGameEdit : genreDataGrid_MouseDoubleClick;
+            if (ForEditGame == true) {
+                genreList = new List<Genre>();
+            }
+            listBoxSelectedItems.Visibility = (ForEditGame == true) ? Visibility.Visible : Visibility.Hidden;
+            stackPanelTop.Height = (ForEditGame == true) ? 110 : 50;
             GenreDataGridUpdate();
         }
         public void GenreDataGridUpdate()
@@ -35,6 +43,58 @@ namespace WpfAppTestDb
                 genreDataGrid.ItemsSource = dev;
             }
         }
+
+        private void listBoxSelectedItems_MouseDoubleClick(object sender, MouseButtonEventArgs e) {
+            int i = listBoxSelectedItems.SelectedIndex;
+            if(i == -1) {return; }
+            string s = listBoxSelectedItems.Items.GetItemAt(i).ToString();
+            //System.Windows.Forms.MessageBox.Show(s);
+            string i2="";
+            int iD=0;
+            for (int j = 0; j < s.Length; j++) 
+            {
+                //System.Windows.Forms.MessageBox.Show(s[j].ToString());
+                if (s[j] == '.') { break; }
+                i2 += s[j];
+                iD = Convert.ToInt32(i2);
+            }
+            Genre g = genreList.Where(x=>x.Id==iD).First();
+            genreList.Remove(g);
+            listBoxSelectedItems.Items.Clear();
+
+            foreach (var item in genreList) {
+                listBoxSelectedItems.Items.Add(item.Id + "." + item.Name);
+            }
+            //string ssss = g.Name.ToString();
+
+            //System.Windows.Forms.MessageBox.Show(ssss);
+            // System.Windows.Forms.MessageBox.Show(g.Name.ToString());
+        }
+
+        private void genreDataGrid_MouseDoubleClickForGameEdit(object sender, MouseButtonEventArgs e) {
+
+            int i = genreDataGrid.SelectedIndex;
+            //var s = pubDataGrid.Items.GetItemAt(1);
+            Genre g = (Genre)genreDataGrid.Items.GetItemAt(i);
+            //MessageBox.Show("get item " + "ID " + g.Id.ToString() + " Title " + g.Name.ToString());
+            foreach (var item in genreList) {
+                if (item.Id == g.Id) {
+                    System.Windows.Forms.MessageBox.Show(item.Name+" уже добавлено");
+                    return; 
+                }
+            }
+            genreList.Add(g);
+            
+            //string ss="";
+            //foreach (var item in genreList) {
+            //    ss += "ID " + item.Id + " Name " + item.Name+" // ";
+                
+            //}
+            listBoxSelectedItems.Items.Add(g.Id+"."+g.Name);
+            //System.Windows.Forms.MessageBox.Show(ss);
+        }
+
+
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (tbTitleChange == null)
@@ -99,5 +159,7 @@ namespace WpfAppTestDb
             genreDialCU.ShowDialog();
             GenreDataGridUpdate();
         }
+
+        
     }
 }

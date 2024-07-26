@@ -1186,24 +1186,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "E:\\vs\\Shared\\NuGetPackages": {}
+    "C:\\Users\\BigVitek\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\vs\\projects\\gamedb\\gamedb\\gamedb.csproj",
+      "projectUniqueName": "E:\\nelShit\\gamedb1\\gamedb\\gamedb.csproj",
       "projectName": "gamedb",
-      "projectPath": "E:\\vs\\projects\\gamedb\\gamedb\\gamedb.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\vs\\projects\\gamedb\\gamedb\\obj\\",
+      "projectPath": "E:\\nelShit\\gamedb1\\gamedb\\gamedb.csproj",
+      "packagesPath": "C:\\Users\\BigVitek\\.nuget\\packages\\",
+      "outputPath": "E:\\nelShit\\gamedb1\\gamedb\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "E:\\vs\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\BigVitek\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1256,7 +1251,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

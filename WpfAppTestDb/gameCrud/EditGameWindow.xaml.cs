@@ -100,5 +100,11 @@ namespace WpfAppTestDb.gameCrud
         private void btnAddPlatform_Click(object sender, RoutedEventArgs e) {
 
         }
+
+        private void btnAddGenre_Click(object sender, RoutedEventArgs e) {
+            EditGenreWindow edit = new EditGenreWindow(true);
+            edit.ShowDialog();
+            
+        }
     }
 }

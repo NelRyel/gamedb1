@@ -12,9 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\User\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\User\\.nuget\\packages",
-      "E:\\vs\\Shared\\NuGetPackages"
+      "C:\\Users\\BigVitek\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\BigVitek\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,
