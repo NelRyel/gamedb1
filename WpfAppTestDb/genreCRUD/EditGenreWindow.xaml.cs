@@ -30,9 +30,13 @@ namespace WpfAppTestDb
             if (ForEditGame == true) {
                 genreList = new List<Genre>();
             }
+            
             listBoxSelectedItems.Visibility = (ForEditGame == true) ? Visibility.Visible : Visibility.Hidden;
             stackPanelTop.Height = (ForEditGame == true) ? 110 : 50;
             GenreDataGridUpdate();
+        }
+        public List<Genre> GetGenres() {
+            return genreList;
         }
         public void GenreDataGridUpdate()
         {
@@ -160,6 +164,14 @@ namespace WpfAppTestDb
             GenreDataGridUpdate();
         }
 
-        
+        private void Button_Click(object sender, RoutedEventArgs e) {
+            Close();
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e) {
+            genreList.Clear();
+            genreList = null;
+            Close();
+        }
     }
 }

@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "E:\\nelShit\\gamedb1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|e:\\nelshit\\gamedb1\\wpfapptestdb\\genrecrud\\editgenrewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|solutionrelative:wpfapptestdb\\genrecrud\\editgenrewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|e:\\nelshit\\gamedb1\\wpfapptestdb\\genrecrud\\editgenrewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|solutionrelative:wpfapptestdb\\genrecrud\\editgenrewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|e:\\nelshit\\gamedb1\\wpfapptestdb\\gamecrud\\editgamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|solutionrelative:wpfapptestdb\\gamecrud\\editgamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|e:\\nelshit\\gamedb1\\wpfapptestdb\\gamecrud\\editgamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|solutionrelative:wpfapptestdb\\gamecrud\\editgamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|e:\\nelshit\\gamedb1\\wpfapptestdb\\genrecrud\\editgenrewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|solutionrelative:wpfapptestdb\\genrecrud\\editgenrewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|e:\\nelshit\\gamedb1\\wpfapptestdb\\genrecrud\\editgenrewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|solutionrelative:wpfapptestdb\\genrecrud\\editgenrewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55162B5B-933E-49C9-A4FB-E9B66BD0DA9A}|WpfAppTestDb\\WpfAppTestDb.csproj|e:\\nelshit\\gamedb1\\wpfapptestdb\\publishercrudnew\\editpubwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -77,8 +77,7 @@
               "ToolTip": "E:\\nelShit\\gamedb1\\WpfAppTestDb\\publisherCrudNew\\EditPubWindow.xaml",
               "RelativeToolTip": "WpfAppTestDb\\publisherCrudNew\\EditPubWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-21T17:25:40.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-21T17:25:40.051Z"
             },
             {
               "$type": "Document",
@@ -93,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "EditGameWindow.xaml",
               "DocumentMoniker": "E:\\nelShit\\gamedb1\\WpfAppTestDb\\gameCrud\\EditGameWindow.xaml",
               "RelativeDocumentMoniker": "WpfAppTestDb\\gameCrud\\EditGameWindow.xaml",
@@ -105,13 +104,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "EditGenreWindow.xaml.cs",
               "DocumentMoniker": "E:\\nelShit\\gamedb1\\WpfAppTestDb\\genreCRUD\\EditGenreWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfAppTestDb\\genreCRUD\\EditGenreWindow.xaml.cs",
               "ToolTip": "E:\\nelShit\\gamedb1\\WpfAppTestDb\\genreCRUD\\EditGenreWindow.xaml.cs",
               "RelativeToolTip": "WpfAppTestDb\\genreCRUD\\EditGenreWindow.xaml.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAowE0AAAA+AAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAhwK0AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T13:16:20.677Z",
               "EditorCaption": ""
@@ -126,8 +125,7 @@
               "RelativeToolTip": "WpfAppTestDb\\publisherCrudNew\\EditPubWindow.xaml.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAADwvx4AAACLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T13:21:31.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-22T13:21:31.597Z"
             },
             {
               "$type": "Document",
@@ -139,25 +137,24 @@
               "RelativeToolTip": "WpfAppTestDb\\developerCrud\\EditDevWindow.xaml.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAswCoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T13:11:21.233Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-19T13:11:21.233Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "EditGameWindow.xaml.cs",
               "DocumentMoniker": "E:\\nelShit\\gamedb1\\WpfAppTestDb\\gameCrud\\EditGameWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfAppTestDb\\gameCrud\\EditGameWindow.xaml.cs",
               "ToolTip": "E:\\nelShit\\gamedb1\\WpfAppTestDb\\gameCrud\\EditGameWindow.xaml.cs",
               "RelativeToolTip": "WpfAppTestDb\\gameCrud\\EditGameWindow.xaml.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAEwGkAAAAeAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAhwCcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-21T17:02:53.297Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EditGenreWindow.xaml",
               "DocumentMoniker": "E:\\nelShit\\gamedb1\\WpfAppTestDb\\genreCRUD\\EditGenreWindow.xaml",
               "RelativeDocumentMoniker": "WpfAppTestDb\\genreCRUD\\EditGenreWindow.xaml",
@@ -188,8 +185,7 @@
               "ToolTip": "E:\\nelShit\\gamedb1\\WpfAppTestDb\\platformCrud\\EditPlatformWindow.xaml",
               "RelativeToolTip": "WpfAppTestDb\\platformCrud\\EditPlatformWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-21T17:25:44.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-21T17:25:44.783Z"
             }
           ]
         }

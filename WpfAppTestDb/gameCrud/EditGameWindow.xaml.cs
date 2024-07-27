@@ -23,6 +23,7 @@ namespace WpfAppTestDb.gameCrud
     {
         Publisher pub;
         Developer dev;
+        List<Genre> genres;
         List<Platform> platforms;
 
 
@@ -104,7 +105,18 @@ namespace WpfAppTestDb.gameCrud
         private void btnAddGenre_Click(object sender, RoutedEventArgs e) {
             EditGenreWindow edit = new EditGenreWindow(true);
             edit.ShowDialog();
-            
+            genres = edit.GetGenres();
+            if (genres == null) { return; } 
+            foreach (var item in genres) {
+                System.Windows.Forms.MessageBox.Show(item.Name);
+            }
+            dtGrdGenre.ItemsSource = genres;
+
+
+        }
+
+        private void btnDelGenre_Click(object sender, RoutedEventArgs e) {
+            dtGrdGenre.ItemsSource = null;
         }
     }
 }

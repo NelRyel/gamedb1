@@ -17,10 +17,12 @@
                 <Button Margin="5" Width="40" Height="40" Click="Button_ClickAddGenre" >Add</Button>
                 <Button Margin="5" Width="40" Height="40" Click="Button_ClickDelGenre" >Del</Button>
                 <Label VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 5 5 5">- selected dev</Label>
+                
                 <ListBox x:Name="listBoxSelectedItems" Width="150" Height="90" Visibility="Hidden" MouseDoubleClick="listBoxSelectedItems_MouseDoubleClick"></ListBox>
             </StackPanel>
             <StackPanel Grid.Row="1" Margin="5 5 5 5" Orientation="Vertical">
                 <Label >double click to edit</Label>
+               
                 <StackPanel Margin="5" Orientation="Horizontal">
                     <TextBox Margin="5 5 5 0" Padding="4" Width="50" x:Name="tbIdChange" TextChanged="TextBox_TextChanged" ></TextBox>
                     <TextBox Margin="5 5 5 0" Padding="4" Width="300" x:Name="tbTitleChange" TextChanged="TextBox_TextChanged" ></TextBox>
@@ -31,6 +33,10 @@
                         <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />
                     </DataGrid.Columns>
                 </DataGrid>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="btnOk" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click" Padding="5" Margin="5">ok</Button>
+                    <Button x:Name="btnCancel" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="5" Margin="5" Click="btnCancel_Click">cancel</Button>
+                </StackPanel>
             </StackPanel>
 
         
