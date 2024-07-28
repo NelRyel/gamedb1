@@ -5,18 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppTestDb.platformCrud"
         mc:Ignorable="d"
-        Title="EditPlatformWindow" Height="450" Width="400"
+        Title="EditPlatformWindow" Height="650" Width="400"
          WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="60"></RowDefinition>
+                <RowDefinition Height="150"></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <StackPanel Height="50"  Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Margin="5,5,5,5">
+            <StackPanel Height="150"  Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Margin="5,5,5,5">
                 <Button Margin="5" Width="40" Height="40" x:Name="btnAdd" Click="btnAdd_Click" >Add</Button>
-                <Button Margin="5" Width="40" Height="40" x:Name="btnDel" Click="btnDel_Click" >Del</Button>
-                <Label VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 5 5 5">- selected platform</Label>
+                <Button Margin="5" Height="40" x:Name="btnDel" Click="btnDel_Click" >
+                    <TextBlock TextAlignment="Center" > Del <LineBreak/>  selected platform</TextBlock>
+                </Button>
+                <ListBox x:Name="listBoxSelectedItems" Width="150" Height="90" Visibility="Visible" MouseDoubleClick="listBoxSelectedItems_MouseDoubleClick" ></ListBox>
+
             </StackPanel>
             <StackPanel Grid.Row="1" Margin="5 5 5 5" Orientation="Vertical">
                 <Label >double click to edit</Label>
@@ -26,18 +29,23 @@
                 </StackPanel>
 
                 
-                    <DataGrid Width="350" Height="280" ScrollViewer.CanContentScroll="True" AutoGenerateColumns="False" Grid.Row="1" Margin="5 5 5 5" x:Name="pltDataGrid" IsReadOnly="True" MouseDoubleClick="pltDataGrid_MouseDoubleClick"  HorizontalScrollBarVisibility="Auto"
+                    <DataGrid Width="350" Height="280" ScrollViewer.CanContentScroll="True" AutoGenerateColumns="False" Grid.Row="1" Margin="5 5 5 5" x:Name="pltDataGrid" IsReadOnly="True"  HorizontalScrollBarVisibility="Auto"
           VerticalScrollBarVisibility="Auto">
                     <DataGrid.Columns  >
                         <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />
                         <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />
                     </DataGrid.Columns>
                 </DataGrid>
-               
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="stcPnlOkCancel">
+                    <Button x:Name="btnOk" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="5" Margin="5" Click="btnOk_Click">ok</Button>
+                    <Button x:Name="btnCancel" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="5" Margin="5" Click="btnCancel_Click" >cancel</Button>
+                </StackPanel>
             </StackPanel>
 
-
+    
 
         </Grid>
+        
     </Grid>
+    
 </Window>

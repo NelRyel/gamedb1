@@ -25,9 +25,11 @@
             <ColumnDefinition Width="60"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center">Enter Name: </TextBlock>
-        <TextBox Grid.Column="1" Grid.Row="0" Margin="5" Height="50" x:Name="txtBoxName"  >entered name</TextBox>
+        <TextBox Grid.Column="1" Grid.Row="0" Margin="5" Height="50" x:Name="txtBoxName"  >Dark Souls</TextBox>
         <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center">Description: </TextBlock>
-        <TextBox Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Margin="5" x:Name="txtBoxDesc" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" SpellCheck.IsEnabled="True" Language="ru-ru"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Margin="5" x:Name="txtBoxDesc" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" SpellCheck.IsEnabled="True" Language="ru-ru">
+            «Тёмные души») — компьютерная игра в жанре action/RPG, разработанная японской компанией From Software и выпущенная в 2011 году для PlayStation 3 и Xbox 360. В Японии издателем игры выступала сама From Software; на международном рынке игру издавала компания Namco Bandai Games. Dark Souls, изначально известная под рабочим названием Project Dark, является идейным наследником игры Demon's Souls и второй частью в серии Souls.
+        </TextBox>
         <TextBlock Grid.Column="0" Grid.Row="3" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Center" >Genre: </TextBlock>
         <DataGrid Grid.Column="1" Grid.Row="3" Margin="5" Height="100" VerticalScrollBarVisibility="Auto" x:Name="dtGrdGenre" IsReadOnly="True" AutoGenerateColumns="False">
             <DataGrid.Columns>
@@ -57,11 +59,16 @@
         </StackPanel>
         
               <TextBlock Grid.Column="0" Grid.Row="6" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Right" >Platform: </TextBlock>
-        <DataGrid Grid.Column="1" Grid.Row="6" Margin="5" VerticalScrollBarVisibility="Auto" x:Name="dtGrdPlat"></DataGrid>
+        <DataGrid Grid.Column="1" Grid.Row="6" Margin="5" VerticalScrollBarVisibility="Auto" x:Name="dtGrdPlat">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />
+                <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />
+            </DataGrid.Columns>
+        </DataGrid>
 
         <StackPanel Grid.Column="2" Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
             <Button Margin="2" x:Name="btnAddPlatform" Padding="5" Click="btnAddPlatform_Click">+</Button>
-            <Button Margin="2" x:Name="btnDelPlatform" Padding="5">-</Button>
+            <Button Margin="2" x:Name="btnDelPlatform" Padding="5" Click="btnDelPlatform_Click">-</Button>
         </StackPanel>
 
 

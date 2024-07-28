@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfAppTestDb.platformCrud;
 using WpfAppTestDb.publisherCrudNew;
 
 namespace WpfAppTestDb.gameCrud
@@ -45,17 +46,30 @@ namespace WpfAppTestDb.gameCrud
             GameDescription description = new GameDescription();    
             string name = txtBoxName.Text;
             string decs = txtBoxDesc.Text;
+
+            game.GameDescription = description;
+            description.Game = game;
+
             game.Name = txtBoxName.Text;
             description.Description = txtBoxDesc.Text;
             description.Publisher = pub;
             description.Developer = dev;
-            description.Game= game;
+            description.PublisherId = pub.Id;
+            description.DeveloperId = dev.Id;
+          
+            description.Genres = genres;
+            description.Platforms = platforms;
+            CrudWpfControls.AddGame(game, description);
+            Close();
+
+            //string s = "";
+            //foreach (var item in game.GameDescription.Platforms) {
+            //    s += item.Name + "/"+ Environment.NewLine;
+            //}
+
+            //System.Windows.Forms.MessageBox.Show(s);
 
 
-
-
-
-            MessageBox.Show(name);
         }
 
         private void btnDelPub_Click(object sender, RoutedEventArgs e)
@@ -99,7 +113,11 @@ namespace WpfAppTestDb.gameCrud
         }
 
         private void btnAddPlatform_Click(object sender, RoutedEventArgs e) {
-
+            EditPlatformWindow editPlatformWindow = new EditPlatformWindow(true);
+            editPlatformWindow.ShowDialog();
+            platforms = editPlatformWindow.GetPlatforms();
+            if (platforms == null) { return; }
+            dtGrdPlat.ItemsSource = platforms;
         }
 
         private void btnAddGenre_Click(object sender, RoutedEventArgs e) {
@@ -107,9 +125,9 @@ namespace WpfAppTestDb.gameCrud
             edit.ShowDialog();
             genres = edit.GetGenres();
             if (genres == null) { return; } 
-            foreach (var item in genres) {
-                System.Windows.Forms.MessageBox.Show(item.Name);
-            }
+            //foreach (var item in genres) {
+            //    System.Windows.Forms.MessageBox.Show(item.Name);
+            //}
             dtGrdGenre.ItemsSource = genres;
 
 
@@ -117,6 +135,10 @@ namespace WpfAppTestDb.gameCrud
 
         private void btnDelGenre_Click(object sender, RoutedEventArgs e) {
             dtGrdGenre.ItemsSource = null;
+        }
+
+        private void btnDelPlatform_Click(object sender, RoutedEventArgs e) {
+            dtGrdPlat.ItemsSource = null;
         }
     }
 }

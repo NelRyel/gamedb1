@@ -32,6 +32,7 @@ namespace WpfAppTestDb
             }
             
             listBoxSelectedItems.Visibility = (ForEditGame == true) ? Visibility.Visible : Visibility.Hidden;
+            stcPnlOkCancel.Visibility = (ForEditGame == true) ? Visibility.Visible : Visibility.Hidden;
             stackPanelTop.Height = (ForEditGame == true) ? 110 : 50;
             GenreDataGridUpdate();
         }
@@ -78,6 +79,9 @@ namespace WpfAppTestDb
         private void genreDataGrid_MouseDoubleClickForGameEdit(object sender, MouseButtonEventArgs e) {
 
             int i = genreDataGrid.SelectedIndex;
+            if (i == -1) {
+                return;
+            }
             //var s = pubDataGrid.Items.GetItemAt(1);
             Genre g = (Genre)genreDataGrid.Items.GetItemAt(i);
             //MessageBox.Show("get item " + "ID " + g.Id.ToString() + " Title " + g.Name.ToString());

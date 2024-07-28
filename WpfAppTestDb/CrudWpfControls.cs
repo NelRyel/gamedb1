@@ -21,6 +21,19 @@ namespace WpfAppTestDb {
             }
         
         }
+        public static bool GameNameCompare(string name) {
+            using (_TestContext db = new _TestContext()) { 
+            List<Game> games = db.Games.ToList();
+                for (int i = 0; i < games.Count; i++) {
+                    if (name == games[i].Name) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+        
+        }
 
         public static bool GenreCompare(string name)
         {
@@ -67,6 +80,24 @@ namespace WpfAppTestDb {
             }
 
         }
+
+        public static void AddGame(Game game, GameDescription gameDescription) {
+            using (_TestContext db = new _TestContext()) {
+                Game g = game;
+                GameDescription d = gameDescription;
+                Developer dev = db.Developers.Find(gameDescription.DeveloperId);
+                //Genre gg = db.Genres.Find(gameDescription.Genres.Id);
+
+                d.Developer = dev;
+                d.DeveloperId = dev.Id;
+               
+                db.GameDescriptions.Add(d);
+                db.Games.Add(g);
+               
+                db.SaveChanges();
+            }
+        }
+
         public static void AddPlatform(string name)
         {
             using (_TestContext db = new _TestContext())

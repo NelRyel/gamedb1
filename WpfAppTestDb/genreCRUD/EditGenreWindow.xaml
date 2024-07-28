@@ -5,24 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppTestDb"
         mc:Ignorable="d"
-        Title="EditGenreWindow" Height="450" Width="400"
+        Title="EditGenreWindow" Height="550" Width="400"
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="150"></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <StackPanel x:Name="stackPanelTop" Height="50"  Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Margin="5,5,5,5">
+            <StackPanel x:Name="stackPanelTop" Height="150"  Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Horizontal" Margin="5,5,5,5">
                 <Button Margin="5" Width="40" Height="40" Click="Button_ClickAddGenre" >Add</Button>
-                <Button Margin="5" Width="40" Height="40" Click="Button_ClickDelGenre" >Del</Button>
-                <Label VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 5 5 5">- selected dev</Label>
-                
-                <ListBox x:Name="listBoxSelectedItems" Width="150" Height="90" Visibility="Hidden" MouseDoubleClick="listBoxSelectedItems_MouseDoubleClick"></ListBox>
+                <Button Margin="5" Padding="3" Height="40" Click="Button_ClickDelGenre" >
+                    <TextBlock TextAlignment="Center" > Del <LineBreak/>  selected genre</TextBlock>
+                </Button>
+                <ListBox x:Name="listBoxSelectedItems" Width="150" Height="90" Visibility="Visible" MouseDoubleClick="listBoxSelectedItems_MouseDoubleClick"></ListBox>
             </StackPanel>
             <StackPanel Grid.Row="1" Margin="5 5 5 5" Orientation="Vertical">
                 <Label >double click to edit</Label>
-               
+
                 <StackPanel Margin="5" Orientation="Horizontal">
                     <TextBox Margin="5 5 5 0" Padding="4" Width="50" x:Name="tbIdChange" TextChanged="TextBox_TextChanged" ></TextBox>
                     <TextBox Margin="5 5 5 0" Padding="4" Width="300" x:Name="tbTitleChange" TextChanged="TextBox_TextChanged" ></TextBox>
@@ -33,14 +33,11 @@
                         <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />
                     </DataGrid.Columns>
                 </DataGrid>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:Name="btnOk" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click" Padding="5" Margin="5">ok</Button>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="stcPnlOkCancel">
+                    <Button x:Name="btnOk" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click" Padding="5" Margin="5">ok</Button>
                     <Button x:Name="btnCancel" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="5" Margin="5" Click="btnCancel_Click">cancel</Button>
                 </StackPanel>
             </StackPanel>
-
-        
-
         </Grid>
     </Grid>
 </Window>
