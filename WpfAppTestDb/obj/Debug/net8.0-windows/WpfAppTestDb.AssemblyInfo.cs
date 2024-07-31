@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WpfAppTestDb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+848cd2555d695585bbe6bdeaeda11b7f16caabe0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2012db0648ce997be3958061364d3b6b2671a0fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("WpfAppTestDb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WpfAppTestDb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
