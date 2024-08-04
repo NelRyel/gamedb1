@@ -69,7 +69,7 @@ namespace WpfAppTestDb {
             mainGameData.ItemsSource = null;
             using (_TestContext db = new _TestContext()) {
 
-                var lin = from l in db.GameDescriptions join gg in db.Games on l.GameId equals gg.Id select new { Id = gg.Id, Name = gg.Name, Desc = l.Description };
+                var lin = from l in db.GameDescriptions join gg in db.Games on l.GameId equals gg.Id select new { Id = gg.Id, Name = gg.Name, Year = l.ReleaseYear  ,Desc = l.Description };
                 mainGameData.ItemsSource = lin.ToList();
                 //return lin.ToList();
 
@@ -118,6 +118,18 @@ namespace WpfAppTestDb {
             editGame.Owner = this;
             editGame.ShowDialog();
             UpdaterDataGrid();
+        }
+
+        private void mainGameData_MouseDoubleClick(object sender, MouseButtonEventArgs e) {
+            if (mainGameData.SelectedIndex == -1) {
+                System.Windows.Forms.MessageBox.Show("mimo");
+                return; 
+            }
+            var cellInfo = mainGameData.SelectedCells[0];
+            var content = (cellInfo.Column.GetCellContent(cellInfo.Item) as TextBlock)!.Text;
+            int id = Convert.ToInt32(content);
+
+            System.Windows.Forms.MessageBox.Show(content.ToString());
         }
     }
 }

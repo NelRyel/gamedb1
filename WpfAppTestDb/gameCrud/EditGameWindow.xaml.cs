@@ -1,6 +1,7 @@
 ﻿using MyLibDb;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,15 +23,26 @@ namespace WpfAppTestDb.gameCrud
     /// </summary>
     public partial class EditGameWindow : Window
     {
+        
+
         Publisher pub;
         Developer dev;
         List<Genre> genres;
         List<Platform> platforms;
 
 
-        public EditGameWindow()
+        public EditGameWindow(bool IsForEdit = false)
         {
             InitializeComponent();
+            //IEnumerable<Button> collection = MainEditGameGrid.Children.OfType<Button>();
+            //foreach (var item in collection) {
+            //    System.Windows.Forms.MessageBox.Show(item.Content.ToString());
+            //}
+            //int i = collection.Count();
+            //System.Windows.Forms.MessageBox.Show(i.ToString());
+
+
+
         }
 
 
@@ -44,13 +56,14 @@ namespace WpfAppTestDb.gameCrud
         {
             Game game = new Game();
             GameDescription description = new GameDescription();    
-            string name = txtBoxName.Text;
-            string decs = txtBoxDesc.Text;
+            //string name = txtBoxName.Text;
+            //string decs = txtBoxDesc.Text;
 
             game.GameDescription = description;
             description.Game = game;
 
             game.Name = txtBoxName.Text;
+            description.ReleaseYear = Convert.ToInt32(tbRelYear.Text);
             description.Description = txtBoxDesc.Text;
             description.Publisher = pub;
             description.Developer = dev;
@@ -140,5 +153,46 @@ namespace WpfAppTestDb.gameCrud
         private void btnDelPlatform_Click(object sender, RoutedEventArgs e) {
             dtGrdPlat.ItemsSource = null;
         }
+
+        private void tbRelYear_PreviewTextInput(object sender, TextCompositionEventArgs e) {
+            CheckIsNum(e);
+        }
+
+        private void CheckIsNum(TextCompositionEventArgs e) {
+            int result;
+
+            if (!(int.TryParse(e.Text, out result) || e.Text == ".")) {
+                e.Handled = true;
+            }
+        }
+
+        private void btnTestBtn_Click(object sender, RoutedEventArgs e) {
+            //var rr = EditWind.GetTemplateChild;
+            //btnAddGenre.Visibility = Visibility.Hidden;
+            EditGameWindow edit = new EditGameWindow();
+            var ee = "";
+            //int ii = VisualTreeHelper.GetChildrenCount(edit);
+            IEnumerable<StackPanel> collection = MainEditGameGrid.Children.OfType<StackPanel>();
+            //Button childVisual = (Button)VisualTreeHelper.GetChild(edit, 1);
+            //foreach (var item in collection) {
+            //    System.Windows.Forms.MessageBox.Show(item.);
+            //}
+            //int i = collection.Count();
+            foreach (var item in collection) {
+                IEnumerable<Button> buttons = item.Children.OfType<Button>();
+            }
+            System.Windows.Forms.MessageBox.Show(collection.Count().ToString());
+            Some = false;
+
+        }
+        private bool some = true;
+
+        public bool Some {
+            get { return some; }
+            set { some = value; }
+        }
+
+        
+
     }
 }

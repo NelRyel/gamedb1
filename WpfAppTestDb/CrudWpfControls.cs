@@ -83,14 +83,32 @@ namespace WpfAppTestDb {
 
         public static void AddGame(Game game, GameDescription gameDescription) {
             using (_TestContext db = new _TestContext()) {
-                Game g = game;
-                GameDescription d = gameDescription;
-                Developer dev = db.Developers.Find(gameDescription.DeveloperId);
-                //Genre gg = db.Genres.Find(gameDescription.Genres.Id);
+                Game g = new Game();
+                GameDescription d = new GameDescription();
+                g.Name = game.Name;
+                d.Description = gameDescription.Description;
+                d.ReleaseYear = gameDescription.ReleaseYear;
 
+                
+                Developer dev = db.Developers.Find(gameDescription.DeveloperId);
+                Publisher pub = db.Publishers.Find(gameDescription.PublisherId)!;
+                
+                //Genre gg = db.Genres.Find(gameDescription.Genres.Id);
+                for(int i = 0; i<gameDescription.Genres.Count(); i++) {
+                   
+                    Genre gen = db.Genres.Find(gameDescription.Genres[i].Id);
+                    d.Genres.Add(gen);
+                }
+                for (int i = 0; i < gameDescription.Platforms.Count(); i++) {
+                    Platform plt = db.Platforms.Find(gameDescription.Platforms[i].Id);
+                    d.Platforms.Add(plt);
+                }
                 d.Developer = dev;
-                d.DeveloperId = dev.Id;
-               
+                d.Publisher = pub;
+                //d.Developer = dev;
+                //d.DeveloperId = dev.Id;
+                d.Game = g;
+                g.GameDescription = d;
                 db.GameDescriptions.Add(d);
                 db.Games.Add(g);
                

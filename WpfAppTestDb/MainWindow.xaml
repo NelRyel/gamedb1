@@ -12,10 +12,11 @@
 
 
         <!--<DataGrid Name="mainGameData" />-->
-        <DataGrid AutoGenerateColumns="False" x:Name="mainGameData" Margin="5 100 5 5" IsReadOnly="True"  >
+        <DataGrid AutoGenerateColumns="False" x:Name="mainGameData" Margin="5 100 5 5" IsReadOnly="True" VerticalScrollBarVisibility="Auto" MouseDoubleClick="mainGameData_MouseDoubleClick">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />
                 <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />
+                <DataGridTextColumn Binding="{Binding Year}" Header="Year" Width="60"  />
                 <DataGridTextColumn Binding="{Binding Desc}" Header="Desc" Width="100"  />
                 <!--<DataGridTextColumn Binding="{Binding Description}" Header="Desc" Width="100"  />-->
                

@@ -5,9 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppTestDb.gameCrud"
         mc:Ignorable="d"
-        Title="EditGameWindow" Height="720" Width="400"
-        WindowStartupLocation="CenterScreen">
-    <Grid ShowGridLines="False">
+        Title="EditGameWindow" Height="720" Width="800"
+        WindowStartupLocation="CenterScreen"
+        x:Name="EditWind"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}">
+    <Grid ShowGridLines="False" x:Name="MainEditGameGrid">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -21,62 +23,66 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="80"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition> 
+            <ColumnDefinition Width="75"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition Width="60"></ColumnDefinition>
+
         </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Grid.Row="6" x:Name="btnTestBtn" Margin="5" Click="btnTestBtn_Click">TEST</Button>
         <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center">Enter Name: </TextBlock>
-        <TextBox Grid.Column="1" Grid.Row="0" Margin="5" Height="50" x:Name="txtBoxName"  >Dark Souls</TextBox>
+        <TextBox Grid.Column="1" Grid.Row="0" Margin="5" Height="50" x:Name="txtBoxName" VerticalContentAlignment="Center"></TextBox>
         <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center">Description: </TextBlock>
-        <TextBox Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Margin="5" x:Name="txtBoxDesc" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" SpellCheck.IsEnabled="True" Language="ru-ru">
-            «Тёмные души») — компьютерная игра в жанре action/RPG, разработанная японской компанией From Software и выпущенная в 2011 году для PlayStation 3 и Xbox 360. В Японии издателем игры выступала сама From Software; на международном рынке игру издавала компания Namco Bandai Games. Dark Souls, изначально известная под рабочим названием Project Dark, является идейным наследником игры Demon's Souls и второй частью в серии Souls.
-        </TextBox>
-        <TextBlock Grid.Column="0" Grid.Row="3" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Center" >Genre: </TextBlock>
-        <DataGrid Grid.Column="1" Grid.Row="3" Margin="5" Height="100" VerticalScrollBarVisibility="Auto" x:Name="dtGrdGenre" IsReadOnly="True" AutoGenerateColumns="False">
+        <TextBox Grid.Column="1" Grid.Row="1" Grid.RowSpan="3" Margin="5" x:Name="txtBoxDesc" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" SpellCheck.IsEnabled="True" Language="ru-ru">
+       </TextBox>
+        <TextBlock Grid.Column="2" Grid.Row="0" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Center" >Genre: </TextBlock>
+        <DataGrid Grid.Column="3" Grid.Row="0" Grid.RowSpan="2" Margin="5" VerticalAlignment="Top" VerticalScrollBarVisibility="Auto" x:Name="dtGrdGenre" IsReadOnly="True" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />
                 <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />
             </DataGrid.Columns>
         </DataGrid>
-        <TextBlock Grid.Column="0" Grid.Row="4" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Right" >Publisher: </TextBlock>
-        <TextBlock Grid.Column="1" Grid.Row="4" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" x:Name="tbSelectedPub" >selected Publisher</TextBlock>
+        <TextBlock Grid.Column="2" Grid.Row="2" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Right" >Publisher: </TextBlock>
+        <TextBlock Grid.Column="3" Grid.Row="2" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" x:Name="tbSelectedPub" >selected Publisher</TextBlock>
 
-        <TextBlock Grid.Column="0" Grid.Row="5" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Right" >Developer: </TextBlock>
-        <TextBlock Grid.Column="1" Grid.Row="5" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" x:Name="tbSelectedDev" >selected Dev</TextBlock>
+        <TextBlock Grid.Column="2" Grid.Row="3" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Right" >Developer: </TextBlock>
+        <TextBlock Grid.Column="3" Grid.Row="3" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" x:Name="tbSelectedDev" >selected Dev</TextBlock>
 
-        <StackPanel Grid.Column="2" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
-            <Button Margin="2" x:Name="btnAddGenre" Padding="5" Click="btnAddGenre_Click"> + </Button>
+        <StackPanel Grid.Column="4" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
+            <Button Margin="2" x:Name="btnAddGenre" Padding="5" Click="btnAddGenre_Click" IsEnabled="{Binding Some}"> + </Button>
             <Button Margin="2" x:Name="btnDelGenre" Padding="5" Click="btnDelGenre_Click"> - </Button>
         </StackPanel>
 
-        <StackPanel Grid.Column="2" Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
+        <StackPanel Grid.Column="4" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
             <Button Margin="2" x:Name="btnAddPub" Padding="5" Click="btnAddPub_Click">+</Button>
             <Button Margin="2" x:Name="btnDelPub" Padding="5" Click="btnDelPub_Click">-</Button>
         </StackPanel>
 
-        <StackPanel Grid.Column="2" Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
+        <StackPanel Grid.Column="4" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
             <Button Margin="2" x:Name="btnAddDev" Padding="5" Click="btnAddDev_Click">+</Button>
             <Button Margin="2" x:Name="btnDelDev" Padding="5" Click="btnDelDev_Click">-</Button>
         </StackPanel>
         
-              <TextBlock Grid.Column="0" Grid.Row="6" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Right" >Platform: </TextBlock>
-        <DataGrid Grid.Column="1" Grid.Row="6" Margin="5" VerticalScrollBarVisibility="Auto" x:Name="dtGrdPlat">
+              <TextBlock Grid.Column="2" Grid.Row="4" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Right" >Platform: </TextBlock>
+        <DataGrid Grid.Column="3" Grid.Row="4" Margin="5" Grid.RowSpan="2" VerticalScrollBarVisibility="Auto" x:Name="dtGrdPlat" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"  />
                 <DataGridTextColumn Binding="{Binding Name}" Header="Title" Width="100"  />
             </DataGrid.Columns>
         </DataGrid>
 
-        <StackPanel Grid.Column="2" Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
+        <StackPanel Grid.Column="4" Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
             <Button Margin="2" x:Name="btnAddPlatform" Padding="5" Click="btnAddPlatform_Click">+</Button>
             <Button Margin="2" x:Name="btnDelPlatform" Padding="5" Click="btnDelPlatform_Click">-</Button>
         </StackPanel>
 
 
 
-        <StackPanel Grid.Column="1" Grid.Row="7" Margin="5" Orientation="Horizontal" HorizontalAlignment="Center">
+        <StackPanel Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="3" Margin="5" Orientation="Horizontal" HorizontalAlignment="Center">
             <Button Margin="5" x:Name="btnOk" Width="50" Padding="5" Click="btnOk_Click">Ok</Button>
             <Button Margin="5" x:Name="btnCancel" Width="50" Padding="5" Click="btnCancel_Click">Cancel</Button>
         </StackPanel>
-
+        <TextBlock Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5">Rel Year</TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="4" Margin="5" x:Name="tbRelYear" Height="40" VerticalContentAlignment="Center" PreviewTextInput="tbRelYear_PreviewTextInput" MaxLength="4"></TextBox>
     </Grid>
 </Window>
