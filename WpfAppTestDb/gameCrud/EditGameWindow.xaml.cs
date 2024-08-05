@@ -31,16 +31,23 @@ namespace WpfAppTestDb.gameCrud
         List<Platform> platforms;
 
 
-        public EditGameWindow(bool IsForEdit = false)
+        public EditGameWindow(bool IsForEdit = false, int idGame = 0)
         {
             InitializeComponent();
-            //IEnumerable<Button> collection = MainEditGameGrid.Children.OfType<Button>();
-            //foreach (var item in collection) {
-            //    System.Windows.Forms.MessageBox.Show(item.Content.ToString());
-            //}
-            //int i = collection.Count();
-            //System.Windows.Forms.MessageBox.Show(i.ToString());
-
+            if(IsForEdit == true)
+            {
+                IEnumerable<StackPanel> collection = MainEditGameGrid.Children.OfType<StackPanel>();
+                foreach (var item in collection)
+                {
+                    IEnumerable<Button> buttons = item.Children.OfType<Button>();
+                    foreach (var itemB in buttons)
+                    {
+                        itemB.Visibility = Visibility.Hidden;
+                    }
+                }
+                btnOk.Visibility = Visibility.Visible;
+                btnCancel.Visibility = Visibility.Visible;
+            }
 
 
         }
@@ -169,8 +176,8 @@ namespace WpfAppTestDb.gameCrud
         private void btnTestBtn_Click(object sender, RoutedEventArgs e) {
             //var rr = EditWind.GetTemplateChild;
             //btnAddGenre.Visibility = Visibility.Hidden;
-            EditGameWindow edit = new EditGameWindow();
-            var ee = "";
+            //EditGameWindow edit = new EditGameWindow();
+            //var ee = "";
             //int ii = VisualTreeHelper.GetChildrenCount(edit);
             IEnumerable<StackPanel> collection = MainEditGameGrid.Children.OfType<StackPanel>();
             //Button childVisual = (Button)VisualTreeHelper.GetChild(edit, 1);
@@ -180,8 +187,12 @@ namespace WpfAppTestDb.gameCrud
             //int i = collection.Count();
             foreach (var item in collection) {
                 IEnumerable<Button> buttons = item.Children.OfType<Button>();
+                foreach (var itemB in buttons)
+                {
+                    itemB.Visibility = Visibility.Hidden;
+                }
             }
-            System.Windows.Forms.MessageBox.Show(collection.Count().ToString());
+            //System.Windows.Forms.MessageBox.Show(collection.Count().ToString());
             Some = false;
 
         }
