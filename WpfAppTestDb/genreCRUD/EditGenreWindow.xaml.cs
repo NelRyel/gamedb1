@@ -44,8 +44,8 @@ namespace WpfAppTestDb
             genreDataGrid.ItemsSource = null;
             using (_TestContext db = new _TestContext())
             {
-                List<Genre> dev = db.Genres.ToList();
-                genreDataGrid.ItemsSource = dev;
+                List<Genre> genres = db.Genres.ToList();
+                genreDataGrid.ItemsSource = genres;
             }
         }
 

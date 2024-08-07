@@ -1,4 +1,5 @@
-﻿using MyLibDb;
+﻿using Microsoft.EntityFrameworkCore;
+using MyLibDb;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,30 +30,93 @@ namespace WpfAppTestDb.gameCrud
         Developer dev;
         List<Genre> genres;
         List<Platform> platforms;
-
+        int idEdit;
 
         public EditGameWindow(bool IsForEdit = false, int idGame = 0)
         {
             InitializeComponent();
-            if(IsForEdit == true)
+            btnOk.Click+=(IsForEdit==true)? btnOk_ClickEditGame : btnOk_Click;
+            if (IsForEdit == true)
             {
-                IEnumerable<StackPanel> collection = MainEditGameGrid.Children.OfType<StackPanel>();
-                foreach (var item in collection)
-                {
-                    IEnumerable<Button> buttons = item.Children.OfType<Button>();
-                    foreach (var itemB in buttons)
-                    {
-                        itemB.Visibility = Visibility.Hidden;
-                    }
-                }
-                btnOk.Visibility = Visibility.Visible;
-                btnCancel.Visibility = Visibility.Visible;
+                //IEnumerable<StackPanel> collection = MainEditGameGrid.Children.OfType<StackPanel>();
+                //foreach (var item in collection)
+                //{
+                //    IEnumerable<Button> buttons = item.Children.OfType<Button>();
+                //    foreach (var itemB in buttons)
+                //    {
+                //        itemB.Visibility = Visibility.Hidden;
+                //    }
+                //}
+                //btnOk.Visibility = Visibility.Visible;
+                //btnCancel.Visibility = Visibility.Visible;
+
+
+                LoadGameData(idGame);
             }
+            
+
+        }
+
+        private void btnOk_ClickEditGame(object sender, RoutedEventArgs e) {
+            Game game = new Game();
+            GameDescription description = new GameDescription();
+            //string name = txtBoxName.Text;
+            //string decs = txtBoxDesc.Text;
+
+            game.GameDescription = description;
+            description.Game = game;
+
+            game.Name = txtBoxName.Text;
+            description.ReleaseYear = Convert.ToInt32(tbRelYear.Text);
+            description.Description = txtBoxDesc.Text;
+            description.Publisher = pub;
+            description.Developer = dev;
+            description.PublisherId = pub.Id;
+            description.DeveloperId = dev.Id;
+
+            description.Genres = genres;
+            description.Platforms = platforms;
+            //CrudWpfControls.AddGame(game, description);
+            Close();
+
+            //string s = "";
+            //foreach (var item in game.GameDescription.Platforms) {
+            //    s += item.Name + "/"+ Environment.NewLine;
+            //}
+
+            //System.Windows.Forms.MessageBox.Show(s);
 
 
         }
 
 
+        private void LoadGameData(int id) {
+            idEdit = id;
+            using (_TestContext db = new _TestContext()) {
+                //Game game = db.Games.Find(id);
+                GameDescription game = db.GameDescriptions.Include(x => x.Game).Include(g => g.Genres).Include(p => p.Publisher).Include(d => d.Developer).Include(pp => pp.Platforms).First(ii => ii.Id == id);
+                //GameDescription gameDescription = db.GameDescriptions.Include(d => d.Genres).First(d => d.GameId == id);
+                //List<Publisher> publishers = db.Publishers.ToList();
+                //List<Developer> developers = db.Developers.ToList();
+                //List<Genre> genres = db.Genres.ToList();
+                //txtBoxName.Text = game.Name;
+                txtBoxName.Text = game.Game.Name;
+                tbRelYear.Text = game.ReleaseYear.ToString();
+                txtBoxDesc.Text = game.Description;
+                tbSelectedPub.Text = game.Publisher.Name;
+                tbSelectedDev.Text = game.Developer.Name;
+                //List<Genre> selectedGenres = game.Genres.ToList();
+                dtGrdGenre.ItemsSource = game.Genres.ToList(); ;
+                dtGrdPlat.ItemsSource = game.Platforms.ToList(); 
+                
+                //string s= game.GameDescription.Description.ToString();
+
+                //System.Windows.Forms.MessageBox.Show(s);
+
+
+
+            }
+        }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {

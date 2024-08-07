@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\vs\projects\gamedb\WpfAppTestDb\obj\Debug\net8.0-windows\
+E:\nelShit\gamedb1\WpfAppTestDb\obj\Debug\net8.0-windows\
 WpfAppTestDb
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-E:\vs\projects\gamedb\WpfAppTestDb\App.xaml
+E:\nelShit\gamedb1\WpfAppTestDb\App.xaml
 13-1959251827
 
 18-597103621
-245502751283
+245-506912624
 AddPubWindow.xaml;developerCrud\EditDevWindow.xaml;developerCrud\EditDivDial.xaml;gameCrud\EditGameWindow.xaml;genreCRUD\EditGenreWindow.xaml;genreCRUD\genreDialCU.xaml;MainWindow.xaml;platformCrud\EditPlatformWindow.xaml;platformCrud\PlatformCUdial.xaml;publisherCrudNew\EditPubWindow.xaml;publisherCrudNew\PublisherDialCU.xaml;PublisherEditWindow.xaml;YesNo.xaml;
 
 False

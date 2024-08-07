@@ -30,7 +30,7 @@
 
         </Grid.ColumnDefinitions>
         <Button Grid.Column="0" Grid.Row="6" x:Name="btnTestBtn" Margin="5" Click="btnTestBtn_Click">TEST</Button>
-        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center">Enter Name: </TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center">Name: </TextBlock>
         <TextBox Grid.Column="1" Grid.Row="0" Margin="5" Height="50" x:Name="txtBoxName" VerticalContentAlignment="Center"></TextBox>
         <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center">Description: </TextBlock>
         <TextBox Grid.Column="1" Grid.Row="1" Grid.RowSpan="3" Margin="5" x:Name="txtBoxDesc" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" SpellCheck.IsEnabled="True" Language="ru-ru">
@@ -79,7 +79,7 @@
 
 
         <StackPanel Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="3" Margin="5" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Margin="5" x:Name="btnOk" Width="50" Padding="5" Click="btnOk_Click">Ok</Button>
+            <Button Margin="5" x:Name="btnOk" Width="50" Padding="5" >Ok</Button>
             <Button Margin="5" x:Name="btnCancel" Width="50" Padding="5" Click="btnCancel_Click">Cancel</Button>
         </StackPanel>
         <TextBlock Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5">Rel Year</TextBlock>

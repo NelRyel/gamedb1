@@ -129,6 +129,10 @@ namespace WpfAppTestDb {
             var content = (cellInfo.Column.GetCellContent(cellInfo.Item) as TextBlock)!.Text;
             int id = Convert.ToInt32(content);
 
+            EditGameWindow editGameWindow = new EditGameWindow(true, id);
+            editGameWindow.Owner = this;
+            editGameWindow.ShowDialog();
+
             System.Windows.Forms.MessageBox.Show(content.ToString());
         }
     }
