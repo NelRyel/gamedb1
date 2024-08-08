@@ -31,7 +31,9 @@ namespace WpfAppTestDb.gameCrud
         List<Genre> genres;
         List<Platform> platforms;
         int idEdit;
-
+        int pubId;
+        int devId;
+        int idDesc;
         public EditGameWindow(bool IsForEdit = false, int idGame = 0)
         {
             InitializeComponent();
@@ -58,40 +60,22 @@ namespace WpfAppTestDb.gameCrud
         }
 
         private void btnOk_ClickEditGame(object sender, RoutedEventArgs e) {
-            Game game = new Game();
-            GameDescription description = new GameDescription();
-            //string name = txtBoxName.Text;
-            //string decs = txtBoxDesc.Text;
 
-            game.GameDescription = description;
-            description.Game = game;
 
-            game.Name = txtBoxName.Text;
-            description.ReleaseYear = Convert.ToInt32(tbRelYear.Text);
-            description.Description = txtBoxDesc.Text;
-            description.Publisher = pub;
-            description.Developer = dev;
-            description.PublisherId = pub.Id;
-            description.DeveloperId = dev.Id;
+            //EditGame(int id, int idDesc, string newName, string newDesc, int newRelYear, int pubId,
+            //int devId, List < Genre > genres, List < Platform > platforms)
+            CrudWpfControls.EditGame(idEdit, idDesc, txtBoxName.Text, txtBoxDesc.Text,Convert.ToInt32(tbRelYear.Text),pubId, devId
+                ,genres, platforms);
 
-            description.Genres = genres;
-            description.Platforms = platforms;
-            //CrudWpfControls.AddGame(game, description);
-            Close();
-
-            //string s = "";
-            //foreach (var item in game.GameDescription.Platforms) {
-            //    s += item.Name + "/"+ Environment.NewLine;
-            //}
-
-            //System.Windows.Forms.MessageBox.Show(s);
-
+            System.Windows.Forms.MessageBox.Show("done");
 
         }
 
 
         private void LoadGameData(int id) {
             idEdit = id;
+            genres = null;
+            platforms = null;
             using (_TestContext db = new _TestContext()) {
                 //Game game = db.Games.Find(id);
                 GameDescription game = db.GameDescriptions.Include(x => x.Game).Include(g => g.Genres).Include(p => p.Publisher).Include(d => d.Developer).Include(pp => pp.Platforms).First(ii => ii.Id == id);
@@ -100,21 +84,25 @@ namespace WpfAppTestDb.gameCrud
                 //List<Developer> developers = db.Developers.ToList();
                 //List<Genre> genres = db.Genres.ToList();
                 //txtBoxName.Text = game.Name;
+                if (id != game.Game.Id) { return; }
+
                 txtBoxName.Text = game.Game.Name;
                 tbRelYear.Text = game.ReleaseYear.ToString();
                 txtBoxDesc.Text = game.Description;
                 tbSelectedPub.Text = game.Publisher.Name;
                 tbSelectedDev.Text = game.Developer.Name;
                 //List<Genre> selectedGenres = game.Genres.ToList();
-                dtGrdGenre.ItemsSource = game.Genres.ToList(); ;
-                dtGrdPlat.ItemsSource = game.Platforms.ToList(); 
-                
+                dtGrdGenre.ItemsSource = game.Genres.ToList();
+                genres = game.Genres.ToList();
+                dtGrdPlat.ItemsSource = game.Platforms.ToList();
+                platforms = game.Platforms.ToList();
                 //string s= game.GameDescription.Description.ToString();
 
                 //System.Windows.Forms.MessageBox.Show(s);
 
-
-
+                idDesc = game.Id;
+                pubId = game.Publisher.Id;
+                devId = game.Developer.Id;
             }
         }
 

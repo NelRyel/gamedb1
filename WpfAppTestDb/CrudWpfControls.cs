@@ -1,4 +1,5 @@
-﻿using MyLibDb;
+﻿using Microsoft.EntityFrameworkCore;
+using MyLibDb;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -255,6 +256,50 @@ namespace WpfAppTestDb {
                 MessageBox.Show("done uspeshno");
 
             }
+        }
+
+        public static void EditGame(int id, int idDesc, string newName, string newDesc, int newRelYear, int pubId,
+            int devId, List<Genre> genres, List<Platform> platforms)
+        { 
+            using (_TestContext db = new _TestContext())
+            {
+                Game game = db.Games.Find(id);
+                GameDescription gameDescription = db.GameDescriptions.Include(g=>g.Genres).Include(plt=>plt.Platforms).Include(p=>p.Publisher).Include(d=>d.Developer).First(gd=>gd.Id==id);
+                game.Name = newName;
+
+                gameDescription.Description = newDesc;
+                gameDescription.ReleaseYear = newRelYear;
+
+                Publisher p = db.Publishers.Find(pubId);
+                gameDescription.Publisher = p;
+
+                Developer d = db.Developers.Find(devId);
+                gameDescription.Developer = d;
+
+                gameDescription.Genres.Clear();
+                gameDescription.Platforms.Clear();
+
+                //gameDescription.Genres = null;
+                //gameDescription.Platforms = null;
+
+
+
+                for (int i = 0; i < genres.Count(); i++)
+                {
+                    Genre gen = db.Genres.Find(genres[i].Id);
+                    gameDescription.Genres.Add(gen);
+                }
+                
+                for(int i = 0; i < platforms.Count(); i++)
+                {
+                    Platform plt = db.Platforms.Find(platforms[i].Id);
+                    gameDescription.Platforms.Add(plt);
+                }
+
+                db.SaveChanges();
+
+            }
+
         }
 
 

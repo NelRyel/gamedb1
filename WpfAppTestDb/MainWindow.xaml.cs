@@ -133,7 +133,8 @@ namespace WpfAppTestDb {
             editGameWindow.Owner = this;
             editGameWindow.ShowDialog();
 
-            System.Windows.Forms.MessageBox.Show(content.ToString());
+            UpdaterDataGrid();
+            //System.Windows.Forms.MessageBox.Show(content.ToString());
         }
     }
 }
