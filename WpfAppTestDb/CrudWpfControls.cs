@@ -87,6 +87,7 @@ namespace WpfAppTestDb {
                 Game g = new Game();
                 GameDescription d = new GameDescription();
                 g.Name = game.Name;
+                
                 d.Description = gameDescription.Description;
                 d.ReleaseYear = gameDescription.ReleaseYear;
 
@@ -302,6 +303,24 @@ namespace WpfAppTestDb {
 
         }
 
+
+
+        public static void DeleteGame(int id)
+        {
+            using (_TestContext db = new _TestContext())
+            {
+                Game g = db.Games.Find(id);
+                GameDescription description = db.GameDescriptions.First(x => x.GameId == id);
+                if (g != null && description!=null)
+                {
+                    db.Games.Remove(g);
+                    db.GameDescriptions.Remove(description);
+                    //System.Windows.Forms.MessageBox.Show(g.Name+" "+description.Description);
+                    db.SaveChanges();
+                }
+                
+            }
+        }
 
     }
 }

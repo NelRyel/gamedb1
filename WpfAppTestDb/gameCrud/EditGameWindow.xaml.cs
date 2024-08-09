@@ -122,6 +122,11 @@ namespace WpfAppTestDb.gameCrud
             description.Game = game;
 
             game.Name = txtBoxName.Text;
+            if (CrudWpfControls.GameNameCompare(game.Name) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("имя "+game.Name+" уже существует");
+                return;
+            }
             description.ReleaseYear = Convert.ToInt32(tbRelYear.Text);
             description.Description = txtBoxDesc.Text;
             description.Publisher = pub;
@@ -131,6 +136,7 @@ namespace WpfAppTestDb.gameCrud
           
             description.Genres = genres;
             description.Platforms = platforms;
+            
             CrudWpfControls.AddGame(game, description);
             Close();
 

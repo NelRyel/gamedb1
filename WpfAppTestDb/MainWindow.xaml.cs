@@ -136,5 +136,37 @@ namespace WpfAppTestDb {
             UpdaterDataGrid();
             //System.Windows.Forms.MessageBox.Show(content.ToString());
         }
+
+        private void btnDelGame_Click(object sender, RoutedEventArgs e)
+        {
+            if (mainGameData.SelectedIndex == -1)
+            {
+                //System.Windows.Forms.MessageBox.Show("mimo");
+                return;
+            }
+
+            var cellInfo = mainGameData.SelectedCells[0];
+            var content = (cellInfo.Column.GetCellContent(cellInfo.Item) as TextBlock)!.Text;
+            int id = Convert.ToInt32(content);
+
+            var cellInfoName = mainGameData.SelectedCells[1];
+            var contentName = (cellInfoName.Column.GetCellContent(cellInfoName.Item) as TextBlock)!.Text;
+
+            //var name = (mainGameData.SelectedCells[1].Column.GetCellContent(mainGameData.SelectedCells[1]) as TextBlock)!.Text;
+            string msg = "Точно удалить ID - " + content + " Name - " + contentName+"?";
+
+            YesNo yesNo = new YesNo(msg);
+            if (yesNo.ShowDialog() == false)
+            {
+                //MessageBox.Show("no no");
+                return;
+            }
+
+            CrudWpfControls.DeleteGame(id);
+
+
+            UpdaterDataGrid();
+            System.Windows.Forms.MessageBox.Show("deleted");
+        }
     }
 }
