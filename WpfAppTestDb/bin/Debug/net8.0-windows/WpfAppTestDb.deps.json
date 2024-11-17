@@ -729,7 +729,10 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.6"
         },
         "runtime": {
-          "MyLibDb.dll": {}
+          "MyLibDb.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

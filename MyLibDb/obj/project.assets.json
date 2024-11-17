@@ -1186,24 +1186,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "E:\\vs\\Shared\\NuGetPackages": {}
+    "C:\\Users\\vivit\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\vs\\projects\\gamedb\\MyLibDb\\MyLibDb.csproj",
+      "projectUniqueName": "C:\\sharpProjects\\gamedb1\\MyLibDb\\MyLibDb.csproj",
       "projectName": "MyLibDb",
-      "projectPath": "E:\\vs\\projects\\gamedb\\MyLibDb\\MyLibDb.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\vs\\projects\\gamedb\\MyLibDb\\obj\\",
+      "projectPath": "C:\\sharpProjects\\gamedb1\\MyLibDb\\MyLibDb.csproj",
+      "packagesPath": "C:\\Users\\vivit\\.nuget\\packages\\",
+      "outputPath": "C:\\sharpProjects\\gamedb1\\MyLibDb\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "E:\\vs\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\vivit\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1256,7 +1251,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -68,7 +68,7 @@ namespace WpfAppTestDb {
         public void UpdaterDataGrid() {
             mainGameData.ItemsSource = null;
             using (_TestContext db = new _TestContext()) {
-
+                //маленькая ремарка, здесь я немного по другому сделал запрос в БД, это LinQ мне нужен был более сложный запрос, а я забыл как в энтити его делать, а это похоже на SQL. 
                 var lin = from l in db.GameDescriptions join gg in db.Games on l.GameId equals gg.Id select new { Id = gg.Id, Name = gg.Name, Year = l.ReleaseYear  ,Desc = l.Description };
                 mainGameData.ItemsSource = lin.ToList();
                 //return lin.ToList();

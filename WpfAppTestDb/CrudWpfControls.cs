@@ -10,6 +10,11 @@ using System.Windows;
 namespace WpfAppTestDb {
     public static class CrudWpfControls {
 
+        //тут я собрал всё, что связано с КРУДами, не очень правильно, по хорошему бы разбить на ещё классы, и папки, но сделал как сделал. 
+        
+
+
+        //это у меня сравнивалка имени, ну чтобы не создавать одинаковых записей
         public static bool PubCompare(string name) {
             using (_TestContext db = new _TestContext()) {
                 List<Publisher> publisher = db.Publishers.ToList();
@@ -22,6 +27,8 @@ namespace WpfAppTestDb {
             }
         
         }
+        //это у меня сравнивалка имени, ну чтобы не создавать одинаковых записей
+
         public static bool GameNameCompare(string name) {
             using (_TestContext db = new _TestContext()) { 
             List<Game> games = db.Games.ToList();
@@ -35,6 +42,8 @@ namespace WpfAppTestDb {
 
         
         }
+
+        //это у меня сравнивалка имени, ну чтобы не создавать одинаковых записей
 
         public static bool GenreCompare(string name)
         {
@@ -82,17 +91,21 @@ namespace WpfAppTestDb {
 
         }
 
+        //а вот создание записиа Игры.  в него из диалогово окна передаются собственно соответствующие обьекты, что не передавать отдельно стринги
+        //всё это уже собрали в диалоговом
         public static void AddGame(Game game, GameDescription gameDescription) {
             using (_TestContext db = new _TestContext()) {
-                Game g = new Game();
-                GameDescription d = new GameDescription();
-                g.Name = game.Name;
+                Game g = new Game();                        //создали обьект игры
+                GameDescription d = new GameDescription(); //и её описания
+                g.Name = game.Name; //присваиваем значения
                 
                 d.Description = gameDescription.Description;
                 d.ReleaseYear = gameDescription.ReleaseYear;
 
                 
-                Developer dev = db.Developers.Find(gameDescription.DeveloperId);
+                Developer dev = db.Developers.Find(gameDescription.DeveloperId); /*здесь, поскольку нельзя просто взять и вытащить обьект Девелопера из обьекта Игры, мы его ищем в БД
+                                                                                  по фату "db.Developers.Find(gameDescription.DeveloperId)" это тоже самое, что запрос
+                                                                                  "SELECT from Developers WHERE ID = dev.Id" ну или как там правильно, я SQL cинтаксис плохо помню */
                 Publisher pub = db.Publishers.Find(gameDescription.PublisherId)!;
                 
                 //Genre gg = db.Genres.Find(gameDescription.Genres.Id);
